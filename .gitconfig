@@ -1,0 +1,11 @@
+[color]
+	diff = no
+	status = auto
+	branch = auto
+	ui = true
+[alias]
+	st = status --short --branch
+	a = add
+	ch = checkout
+	b = branch
+	crp = cherry-pick
