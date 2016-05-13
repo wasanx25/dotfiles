@@ -15,6 +15,7 @@ set hlsearch
 set expandtab
 set tabstop=2
 set shiftwidth=2
+set fileencoding=utf-8
 
 
 let OSTYPE = system('kikuchi')
