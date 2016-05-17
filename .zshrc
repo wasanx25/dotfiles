@@ -1,4 +1,6 @@
 
+fpath=(~/.zsh/completion $fpath)
+
 autoload -U compinit
 setopt complete_aliases
 compinit
@@ -14,16 +16,12 @@ gre() {
    grep -rn $1 --color --exclude-dir=$2;
 }
 
-source ~/.git-completion.bash
 
 autoload colors
 colors
 
 PROMPT="
- %{${fg[yellow]}%}%~%{${reset_color}%} 
- [%n]$ "
-
- PROMPT2='[%n]> ' 
+  [%n:%{${fg[yellow]}%}%~%{${reset_color}%}]$ "
 
 # HISTORY
 HISTFILE=~/.zsh_history
