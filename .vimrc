@@ -75,6 +75,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'burnettk/vim-angular'
   " angular snippet
   NeoBundle 'matthewsimo/angular-vim-snippets'
+  " typescript syntax
+  NeoBundle 'leafgarland/typescript-vim'
+  NeoBundle 'taichouchou2/vim-javascript'
+  autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
 
 call neobundle#end()
