@@ -71,6 +71,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   " NeoBundle 'bronson/vim-trailing-whitespace'
   " Docker syntax
   NeoBundle 'ekalinin/Dockerfile.vim'
+  " angular syntax
+  NeoBundle 'burnettk/vim-angular'
+  " angular snippet
+  NeoBundle 'matthewsimo/angular-vim-snippets'
 
 
 call neobundle#end()
