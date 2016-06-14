@@ -79,6 +79,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'leafgarland/typescript-vim'
   NeoBundle 'taichouchou2/vim-javascript'
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
+  " golang syntax
+  NeoBundle 'fatih/vim-go'
 
 
 call neobundle#end()
