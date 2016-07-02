@@ -81,6 +81,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
   " golang syntax
   NeoBundle 'fatih/vim-go'
+  " vim-json syntax
+  NeoBundle 'elzr/vim-json'
+  " slim syntax
+  NeoBundle 'slim-template/vim-slim'
 
 
 call neobundle#end()
