@@ -85,6 +85,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'elzr/vim-json'
   " slim syntax
   NeoBundle 'slim-template/vim-slim'
+  " coffee syntax
+  NeoBundle 'kchmck/vim-coffee-script'
+  " swift syntax
+  NeoBundle 'kballard/vim-swift'
 
 
 call neobundle#end()
