@@ -56,7 +56,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   " asynchronous
   "NeoBundle 'Shougo/vimproc'
   "emmet記法
-  "NeoBundle 'mattn/emmet-vim'
+  NeoBundle 'mattn/emmet-vim'
   "NERDTree
   NeoBundle 'scrooloose/nerdtree'
   " Ruby向けにendを自動挿入してくれる
