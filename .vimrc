@@ -26,7 +26,7 @@ endif
 
 set viminfo='50,\"3000,:0,n~/.viminfo
 
-au BufRead,BufNewFile /etc/nginx/* set ft=nginx
+au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
 
 
 "--------------------------------------------------------------------------
@@ -89,6 +89,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'kchmck/vim-coffee-script'
   " swift syntax
   NeoBundle 'kballard/vim-swift'
+  " nginx syntax
+  NeoBundle 'vim-scripts/nginx.vim'
 
 
 call neobundle#end()
