@@ -91,6 +91,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'kballard/vim-swift'
   " nginx syntax
   NeoBundle 'vim-scripts/nginx.vim'
+  " tmux syntax
+  NeoBundle 'keith/tmux.vim'
 
 
 call neobundle#end()
