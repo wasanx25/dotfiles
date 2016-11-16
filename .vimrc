@@ -93,6 +93,21 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'vim-scripts/nginx.vim'
   " tmux syntax
   NeoBundle 'keith/tmux.vim'
+  " NeoBundle 'Shougo/vimproc.vim', {
+  "       \ 'build' : {
+  "       \     'windows' : 'tools\\update-dll-mingw',
+  "       \     'cygwin' : 'make -f make_cygwin.mak',
+  "       \     'mac' : 'make -f make_mac.mak',
+  "       \     'linux' : 'make',
+  "       \     'unix' : 'gmake',
+  "       \    },
+  "       \ }
+
+  " NeoBundle 'Quramy/tsuquyomi'
+  " elixir syntax
+  NeoBundle 'elixir-lang/vim-elixir'
+  " env syntax
+  NeoBundle 'tpope/vim-dotenv'
 
 
 call neobundle#end()
