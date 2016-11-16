@@ -27,7 +27,7 @@ endif
 
 set viminfo='50,\"3000,:0,n~/.viminfo
 
-au BufRead,BufNewFile /etc/nginx/* set ft=nginx
+au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
 
 
 "--------------------------------------------------------------------------
@@ -57,7 +57,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   " asynchronous
   "NeoBundle 'Shougo/vimproc'
   "emmet記法
-  "NeoBundle 'mattn/emmet-vim'
+  NeoBundle 'mattn/emmet-vim'
   "NERDTree
   NeoBundle 'scrooloose/nerdtree'
   " Ruby向けにendを自動挿入してくれる
@@ -80,6 +80,35 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'leafgarland/typescript-vim'
   NeoBundle 'taichouchou2/vim-javascript'
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
+  " golang syntax
+  NeoBundle 'fatih/vim-go'
+  " vim-json syntax
+  NeoBundle 'elzr/vim-json'
+  " slim syntax
+  NeoBundle 'slim-template/vim-slim'
+  " coffee syntax
+  NeoBundle 'kchmck/vim-coffee-script'
+  " swift syntax
+  NeoBundle 'kballard/vim-swift'
+  " nginx syntax
+  NeoBundle 'vim-scripts/nginx.vim'
+  " tmux syntax
+  NeoBundle 'keith/tmux.vim'
+  " NeoBundle 'Shougo/vimproc.vim', {
+  "       \ 'build' : {
+  "       \     'windows' : 'tools\\update-dll-mingw',
+  "       \     'cygwin' : 'make -f make_cygwin.mak',
+  "       \     'mac' : 'make -f make_mac.mak',
+  "       \     'linux' : 'make',
+  "       \     'unix' : 'gmake',
+  "       \    },
+  "       \ }
+
+  " NeoBundle 'Quramy/tsuquyomi'
+  " elixir syntax
+  NeoBundle 'elixir-lang/vim-elixir'
+  " env syntax
+  NeoBundle 'tpope/vim-dotenv'
 
 
 call neobundle#end()
