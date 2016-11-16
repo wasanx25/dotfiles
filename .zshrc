@@ -1,3 +1,12 @@
+alias lsr='ls -lR'
+alias lsa='ls -la'
+alias g='git'
+alias d='docker'
+alias drma='docker rm $(docker ps -a -q)'
+alias sublime='cd ~/Library/Application\ Support/Sublime\ Text\ 3/'
+alias fig='docker-compose'
+
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -49,7 +58,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(brew git docker docker-compose ruby tmux rails)
+plugins=(vagrant brew git docker docker-compose ruby tmux rails)
 
 # User configuration
 
