@@ -28,7 +28,7 @@ endif
 set viminfo='50,\"3000,:0,n~/.viminfo
 
 au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
-
+au BufRead,BufNewFile */Vagrantfile set ft=ruby
 
 "--------------------------------------------------------------------------
 " neobundle
