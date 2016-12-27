@@ -29,6 +29,8 @@ set viminfo='50,\"3000,:0,n~/.viminfo
 
 au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
 au BufRead,BufNewFile */Vagrantfile set ft=ruby
+au BufRead,BufNewFile */Gemfile set ft=ruby
+au BufRead,BufNewFile */Gemfile.lock set ft=ruby
 
 "--------------------------------------------------------------------------
 " neobundle
