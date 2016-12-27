@@ -109,6 +109,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'elixir-lang/vim-elixir'
   " env syntax
   NeoBundle 'tpope/vim-dotenv'
+  " less syntax
+  NeoBundle 'groenewege/vim-less'
 
 
 call neobundle#end()
