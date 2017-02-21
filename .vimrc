@@ -113,6 +113,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'tpope/vim-dotenv'
   " less syntax
   NeoBundle 'groenewege/vim-less'
+  " nix syntax
+  NeoBundle 'LnL7/vim-nix'
+  " fish syntax
+  NeoBundle 'vim-scripts/fish-syntax'
 
 
 call neobundle#end()
