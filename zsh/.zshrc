@@ -11,6 +11,3 @@ ZSH_THEME="robbyrussell"
 
 plugins=(bundle gradle vagrant mix mvn nix brew git docker docker-compose ruby gem rails web-search)
 source $ZSH/oh-my-zsh.sh
-
-export SDKMAN_DIR="/Users/kikuchi/.sdkman"
-[[ -s "/Users/kikuchi/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/kikuchi/.sdkman/bin/sdkman-init.sh"
