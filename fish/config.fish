@@ -1,6 +1,7 @@
 alias lsr='ls -lR'
 alias lst='ls -lat'
 alias lsa='ls -la'
+alias g='git'
 alias fig='docker-compose'
 
 set normal (set_color normal)
