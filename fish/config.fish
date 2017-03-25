@@ -3,6 +3,7 @@ alias lst='ls -lat'
 alias lsa='ls -la'
 alias g='git'
 alias fig='docker-compose'
+alias be='docker-compose run web bundle exec'
 
 set normal (set_color normal)
 set magenta (set_color magenta)
@@ -79,4 +80,13 @@ end
 
 function drma
   docker rm (docker ps -a -q)
+end
+
+function git_clean
+  git checkout develop
+  git pull upstream develop
+  git push origin develop
+  git checkout master
+  git pull upstream master
+  git push origin master
 end
