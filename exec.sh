@@ -2,26 +2,26 @@
 mkdir ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
 ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/.profile ~/.profile
 ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
-ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
 
 DEFAULT=${SHELL##*/}
 
 case $DEFAULT in
   "fish")
+    ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
     source ~/.config/fish/config.fish
     echo $DEFAULT
     ;;
   "zsh")
+    ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
     source ~/.zshrc
     echo $DEFAULT
     ;;
   "bash")
+    ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
     source ~/.bashrc
     echo $DEFAULT
     ;;
