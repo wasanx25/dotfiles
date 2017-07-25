@@ -119,6 +119,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'vim-scripts/fish-syntax'
   " git
   NeoBundle 'tpope/vim-fugitive'
+  " Dash
+  NeoBundle 'rizzatti/dash.vim'
 
 
 call neobundle#end()
