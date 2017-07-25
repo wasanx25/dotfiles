@@ -121,7 +121,10 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'tpope/vim-fugitive'
   " Dash
   NeoBundle 'rizzatti/dash.vim'
-
+  " Gradle syntax
+  NeoBundle 'tfnico/vim-gradle'
+  " Groovy syntax
+  NeoBundle 'vim-scripts/groovy.vim'
 
 call neobundle#end()
 
