@@ -125,10 +125,19 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'tfnico/vim-gradle'
   " Groovy syntax
   NeoBundle 'vim-scripts/groovy.vim'
+  " Automatically update tags
+  NeoBundle 'szw/vim-tags'
+  let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -f .tags -R . 2>/dev/null"
+  let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R -f .Gemfile.lock.tags `bundle show --paths` 2>/dev/null"
+  set tags+=.tags
+  set tags+=.Gemfile.lock.tags
 
 call neobundle#end()
 
 filetype plugin indent on     " Required!
+
+" Display list when mutiple destination
+nnoremap <C-]> g<C-]>
 
 " NERDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
