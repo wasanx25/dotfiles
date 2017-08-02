@@ -9,5 +9,5 @@ alias fig='docker-compose'
 export ZSH=$HOME/dotfiles/zsh/oh-my-zsh
 ZSH_THEME="robbyrussell"
 
-plugins=(bundle gradle vagrant mix mvn nix brew git docker docker-compose ruby gem rails web-search)
+plugins=(grails bundle gradle vagrant mix mvn nix brew git docker docker-compose ruby gem rails web-search)
 source $ZSH/oh-my-zsh.sh
