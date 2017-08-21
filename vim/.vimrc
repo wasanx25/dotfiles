@@ -18,6 +18,9 @@ set shiftwidth=2
 set fileencoding=utf-8
 set encoding=utf-8
 
+set rtp+=$GOROOT/misc/vim
+exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+set completeopt=menu,preview
 
 let OSTYPE = system('kikuchi')
 if OSTYPE == "Linux\n"
