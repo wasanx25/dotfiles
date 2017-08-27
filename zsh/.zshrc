@@ -33,3 +33,16 @@ function fzf-select-history() {
 zle -N fzf-select-history
 bindkey '^R' fzf-select-history
 
+function fzf-find-file() {
+  if git rev-parse 2> /dev/null; then
+      source_files=$(git ls-files)
+  else
+      source_files=$(find . -type f)
+  fi
+  BUFFER=$BUFFER$(echo $source_files | fzf --prompt "[find file]")
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+
+zle -N fzf-find-file
+bindkey '^q' fzf-find-file
