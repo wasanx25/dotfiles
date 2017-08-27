@@ -11,3 +11,9 @@ ZSH_THEME="robbyrussell"
 
 plugins=(kubectl grails bundle gradle vagrant mix mvn nix brew git docker docker-compose ruby gem rails web-search)
 source $ZSH/oh-my-zsh.sh
+
+# Go 環境設定
+if [ -x "`which go`" ]; then
+    export GOPATH=$HOME/.go
+    export PATH=$PATH:$GOPATH/bin
+fi
