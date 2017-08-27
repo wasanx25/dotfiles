@@ -24,3 +24,12 @@ if [ -f '/Users/wataru0225/google-cloud-sdk/path.zsh.inc' ]; then source '/Users
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/wataru0225/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/wataru0225/google-cloud-sdk/completion.zsh.inc'; fi
 
+function fzf-select-history() {
+  BUFFER=$(fc -l -r -n 1 | fzf --query "$LBUFFER")
+  CURSOR=$#BUFFER
+  zle redisplay
+}
+
+zle -N fzf-select-history
+bindkey '^R' fzf-select-history
+
