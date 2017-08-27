@@ -17,3 +17,10 @@ if [ -x "`which go`" ]; then
     export GOPATH=$HOME/.go
     export PATH=$PATH:$GOPATH/bin
 fi
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/wataru0225/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/wataru0225/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/wataru0225/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/wataru0225/google-cloud-sdk/completion.zsh.inc'; fi
+
