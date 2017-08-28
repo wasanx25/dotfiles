@@ -134,6 +134,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   let g:vim_tags_gems_tags_command = "/usr/local/bin/ctags -R -f .Gemfile.lock.tags `bundle show --paths` 2>/dev/null"
   set tags+=.tags
   set tags+=.Gemfile.lock.tags
+  " protobuffer syntax
+  NeoBundle 'uarun/vim-protobuf'
 
 call neobundle#end()
 
