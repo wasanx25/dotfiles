@@ -90,3 +90,5 @@ function git_clean
   git pull upstream master
   git push origin master
 end
+
+[ -s "$HOME/.jabba/jabba.fish" ]; and source "$HOME/.jabba/jabba.fish"
