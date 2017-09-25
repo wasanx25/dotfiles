@@ -1,16 +1,14 @@
-" 行番号表示
+" display line number
 set number
-" 常にステータスラインを表示
+" always display status line
 set laststatus=2
 
 " :colorscheme solarized
 set t_Co=256
 "set background=dark
 syntax on
-" 検索結果のハイライト
+" search result highlight
 set hlsearch
-" ハイライトを消す
-" nnoremap <esc> :noh<CR>
 
 set expandtab
 set tabstop=2
@@ -50,30 +48,30 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
   NeoBundle 'Shougo/neobundle.vim'
 
-  " 編集履歴管理, Undo/Redo 履歴管理
+  " edit history, Undo/Redo history
   NeoBundle 'sjl/gundo.vim'
   " solarized
   NeoBundle 'altercation/vim-colors-solarized'
-  " ステータスラインの見た目
+  " status line visual
   NeoBundle 'Lokaltog/vim-powerline.git'
   " filer
   "NeoBundle 'Shougo/vimfiler'
   "NeoBundle 'LustyExplorer'
   " asynchronous
   "NeoBundle 'Shougo/vimproc'
-  "emmet記法
+  "emmet notation
   NeoBundle 'mattn/emmet-vim'
   "NERDTree
   NeoBundle 'scrooloose/nerdtree'
-  " Ruby向けにendを自動挿入してくれる
+  " Rubist love
   NeoBundle 'tpope/vim-endwise'
-  " コメントON/OFFを手軽に実行
+  " comment shortcut
   NeoBundle 'tomtom/tcomment_vim'
-  " vimを立ち上げたときに、自動的にvim-indent-guidesをオンにする
+  " auto vim-indent-guides on
   let g:indent_guides_enable_on_vim_startup = 1
-  " ログファイルを色づけしてくれる
+  " coloring log file
   NeoBundle 'vim-scripts/AnsiEsc.vim'
-  " 行末の半角スペースを可視化
+  " display useless one-byte spaece
   " NeoBundle 'bronson/vim-trailing-whitespace'
   " Docker syntax
   NeoBundle 'ekalinin/Dockerfile.vim'
@@ -137,6 +135,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   " protobuffer syntax
   NeoBundle 'uarun/vim-protobuf'
 
+  NeoBundle 'pangloss/vim-javascript'
+  NeoBundle 'mxw/vim-jsx'
+
 call neobundle#end()
 
 filetype plugin indent on     " Required!
@@ -148,7 +149,7 @@ nnoremap <C-]> g<C-]>
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 
 """"""""""""""""""""""""""""""
-" 自動的に閉じ括弧を入力
+" auto complete close bracket
 """"""""""""""""""""""""""""""
 "imap { {}<LEFT>
 "imap [ []<LEFT>
@@ -156,7 +157,7 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 """"""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""
-" 最後のカーソル位置を復元する
+" reopen vim from previous cursor position
 """"""""""""""""""""""""""""""
 if has("autocmd")
     autocmd BufReadPost *
@@ -167,7 +168,7 @@ endif
 """"""""""""""""""""""""""""""
 
 """"""""""""""""""""""""""""""
-" 検索時に件数を表示する
+" display number of search result
 """"""""""""""""""""""""""""""
 nnoremap <expr> / _(":%s/<Cursor>/&/gn")
 
