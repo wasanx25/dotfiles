@@ -47,18 +47,12 @@ endif
 call neobundle#begin(expand('~/.vim/bundle/'))
 
   NeoBundle 'Shougo/neobundle.vim'
-
   " edit history, Undo/Redo history
   NeoBundle 'sjl/gundo.vim'
   " solarized
   NeoBundle 'altercation/vim-colors-solarized'
   " status line visual
   NeoBundle 'Lokaltog/vim-powerline.git'
-  " filer
-  "NeoBundle 'Shougo/vimfiler'
-  "NeoBundle 'LustyExplorer'
-  " asynchronous
-  "NeoBundle 'Shougo/vimproc'
   "emmet notation
   NeoBundle 'mattn/emmet-vim'
   "NERDTree
@@ -72,60 +66,34 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   " coloring log file
   NeoBundle 'vim-scripts/AnsiEsc.vim'
   " display useless one-byte spaece
-  " NeoBundle 'bronson/vim-trailing-whitespace'
-  " Docker syntax
-  NeoBundle 'ekalinin/Dockerfile.vim'
-  " angular syntax
-  NeoBundle 'burnettk/vim-angular'
-  " angular snippet
-  NeoBundle 'matthewsimo/angular-vim-snippets'
-  " typescript syntax
-  NeoBundle 'leafgarland/typescript-vim'
-  NeoBundle 'taichouchou2/vim-javascript'
-  autocmd BufRead,BufNewFile *.ts set filetype=typescript
-  " golang syntax
-  NeoBundle 'fatih/vim-go'
-  " vim-json syntax
-  NeoBundle 'elzr/vim-json'
-  " slim syntax
-  NeoBundle 'slim-template/vim-slim'
-  " coffee syntax
-  NeoBundle 'kchmck/vim-coffee-script'
-  " swift syntax
-  NeoBundle 'kballard/vim-swift'
-  " nginx syntax
-  NeoBundle 'vim-scripts/nginx.vim'
-  " tmux syntax
-  NeoBundle 'keith/tmux.vim'
-  " NeoBundle 'Shougo/vimproc.vim', {
-  "       \ 'build' : {
-  "       \     'windows' : 'tools\\update-dll-mingw',
-  "       \     'cygwin' : 'make -f make_cygwin.mak',
-  "       \     'mac' : 'make -f make_mac.mak',
-  "       \     'linux' : 'make',
-  "       \     'unix' : 'gmake',
-  "       \    },
-  "       \ }
-
-  " NeoBundle 'Quramy/tsuquyomi'
-  " elixir syntax
-  NeoBundle 'elixir-lang/vim-elixir'
-  " env syntax
-  NeoBundle 'tpope/vim-dotenv'
-  " less syntax
-  NeoBundle 'groenewege/vim-less'
-  " nix syntax
-  NeoBundle 'LnL7/vim-nix'
-  " fish syntax
-  NeoBundle 'vim-scripts/fish-syntax'
+  NeoBundle 'bronson/vim-trailing-whitespace'
   " git
   NeoBundle 'tpope/vim-fugitive'
   " Dash
   NeoBundle 'rizzatti/dash.vim'
-  " Gradle syntax
-  NeoBundle 'tfnico/vim-gradle'
-  " Groovy syntax
+
+  " Syntax Highlight
   NeoBundle 'vim-scripts/groovy.vim'
+  NeoBundle 'tfnico/vim-gradle'
+  NeoBundle 'vim-scripts/fish-syntax'
+  NeoBundle 'LnL7/vim-nix'
+  NeoBundle 'groenewege/vim-less'
+  NeoBundle 'tpope/vim-dotenv'
+  NeoBundle 'elixir-lang/vim-elixir'
+  NeoBundle 'keith/tmux.vim'
+  NeoBundle 'vim-scripts/nginx.vim'
+  NeoBundle 'kballard/vim-swift'
+  NeoBundle 'kchmck/vim-coffee-script'
+  NeoBundle 'fatih/vim-go'
+  NeoBundle 'elzr/vim-json'
+  NeoBundle 'slim-template/vim-slim'
+  NeoBundle 'leafgarland/typescript-vim'
+  NeoBundle 'taichouchou2/vim-javascript'
+  NeoBundle 'ekalinin/Dockerfile.vim'
+  NeoBundle 'burnettk/vim-angular'
+  NeoBundle 'matthewsimo/angular-vim-snippets'
+  autocmd BufRead,BufNewFile *.ts set filetype=typescript
+
   " Automatically update tags
   NeoBundle 'szw/vim-tags'
   let g:vim_tags_project_tags_command = "/usr/local/bin/ctags -f .tags -R . 2>/dev/null"
