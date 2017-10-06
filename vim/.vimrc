@@ -107,6 +107,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   set tags+=.Gemfile.lock.tags
   " protobuffer syntax
   NeoBundle 'uarun/vim-protobuf'
+  " gocode
+  NeoBundle 'nsf/gocode'
 
   NeoBundle 'pangloss/vim-javascript'
   NeoBundle 'mxw/vim-jsx'
