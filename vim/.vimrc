@@ -71,6 +71,11 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'tpope/vim-fugitive'
   " Dash
   NeoBundle 'rizzatti/dash.vim'
+  " silver searcher
+  NeoBundle 'mileszs/ack.vim'
+  if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+  endif
 
   " Syntax Highlight
   NeoBundle 'vim-scripts/groovy.vim'
