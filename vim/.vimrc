@@ -97,6 +97,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'ekalinin/Dockerfile.vim'
   NeoBundle 'burnettk/vim-angular'
   NeoBundle 'matthewsimo/angular-vim-snippets'
+  NeoBundle 'hashivim/vim-terraform'
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
 
   " Automatically update tags
