@@ -99,6 +99,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'matthewsimo/angular-vim-snippets'
   NeoBundle 'hashivim/vim-terraform'
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
+  NeoBundle 'cakebaker/scss-syntax.vim'
 
   " Automatically update tags
   NeoBundle 'szw/vim-tags'
