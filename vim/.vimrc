@@ -101,6 +101,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'hashivim/vim-terraform'
   autocmd BufRead,BufNewFile *.ts set filetype=typescript
   NeoBundle 'cakebaker/scss-syntax.vim'
+  NeoBundle 'bigbrozer/vim-nagios'
+  autocmd BufRead,BufNewFile *.cfg set filetype=nagios
 
   " Automatically update tags
   NeoBundle 'szw/vim-tags'
