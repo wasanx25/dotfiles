@@ -27,6 +27,7 @@ react@0.17.0
 regex-railroad-diagram@0.19.4
 remote-ftp@2.1.4
 rubocop-auto-correct@1.5.1
+ruby-block@0.3.6
 ruby-slim@0.2.0
 split-diff@1.5.2
 teletype@0.6.0
