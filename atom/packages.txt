@@ -7,7 +7,7 @@ autocomplete-ruby@0.2.8
 busy-signal@1.4.3
 docker@0.8.0
 emmet@2.4.3
-file-icons@2.1.15
+file-icons@2.1.16
 go-plus@5.7.2
 godef@0.2.5
 ide-java@0.7.0
@@ -29,8 +29,8 @@ remote-ftp@2.1.4
 rubocop-auto-correct@1.5.1
 ruby-slim@0.2.0
 split-diff@1.5.2
-teletype@0.5.0
+teletype@0.6.0
 terminal-plus@0.14.5
-vim-mode-plus@1.25.1
+vim-mode-plus@1.26.0
 vim-mode-plus-ex-mode@0.11.0
 
