@@ -19,10 +19,10 @@ if [ -x "`which go`" ]; then
 fi
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/wataru0225/google-cloud-sdk/path.zsh.inc' ]; then source '/Users/wataru0225/google-cloud-sdk/path.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
 
 # The next line enables shell command completion for gcloud.
-if [ -f '/Users/wataru0225/google-cloud-sdk/completion.zsh.inc' ]; then source '/Users/wataru0225/google-cloud-sdk/completion.zsh.inc'; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
 function fzf-select-history() {
   BUFFER=$(fc -l -r -n 1 | fzf --query "$LBUFFER")
