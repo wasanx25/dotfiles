@@ -3,7 +3,6 @@ alias lsa='ls -la'
 alias g='git'
 alias d='docker'
 alias drma='docker rm $(docker ps -a -q)'
-alias sublime='cd ~/Library/Application\ Support/Sublime\ Text\ 3/'
 alias fig='docker-compose'
 alias trr='terraform'
 
