@@ -1,0 +1,9 @@
+*~
+.DS_Store
+*.swp
+*tags
+*.tags
+*.tags1
+.idea/*
+*.iml
+*.log

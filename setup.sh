@@ -2,7 +2,8 @@
 mkdir ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/git/.gitignore_global ~/.gitignore_global
 ln -sf ~/dotfiles/.profile ~/.profile
 ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
