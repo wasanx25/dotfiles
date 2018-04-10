@@ -13,3 +13,4 @@
 	email = wataru.kikuchi0225@gmail.com
 [core]
 	editor = vim -c \"set fenc=utf-8\"
+	excludesfile = ~/.gitignore_global
