@@ -1,13 +1,18 @@
 #!/bin/sh
-mkdir ~/.vim/bundle
-git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
-ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/git/.gitignore_global ~/.gitignore_global
-ln -sf ~/dotfiles/.profile ~/.profile
-ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+### setup vim ###
+if [ ! -e $HOME/.vim/bundle ]; then
+  mkdir $HOME/.vim/bundle
+fi
+
+if [ ! -e $HOME/.vim/bundle/neobundle.vim ]; then
+  git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
+fi
+
 ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
 
+
+### setup shell by default shell###
 DEFAULT=${SHELL##*/}
 
 case $DEFAULT in
@@ -32,6 +37,17 @@ case $DEFAULT in
     ;;
 esac
 
+
+### setup git config ###
+ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/git/.gitignore_global ~/.gitignore_global
+
+
+### setup tmux config ###
+ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+
+
+### setup nix config if it is nixos ###
 case "$(uname -n)" in
   "nixbox")
     sudo ln -s ~/dotfiles/nix/service-configuration.nix /etc/nixos/service-configuration.nix
