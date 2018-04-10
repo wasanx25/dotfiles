@@ -9,7 +9,7 @@ if [ ! -e $HOME/.vim/bundle/neobundle.vim ]; then
   git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 fi
 
-ln -sf ~/dotfiles/vim/.vimrc ~/.vimrc
+ln -sf $HOME/dotfiles/vim/.vimrc $HOME/.vimrc
 
 
 ### setup shell by default shell###
@@ -17,18 +17,18 @@ DEFAULT=${SHELL##*/}
 
 case $DEFAULT in
   "fish")
-    ln -sf ~/dotfiles/fish/config.fish ~/.config/fish/config.fish
-    source ~/.config/fish/config.fish
+    ln -sf $HOME/dotfiles/fish/config.fish $HOME/.config/fish/config.fish
+    source $HOME/.config/fish/config.fish
     echo $DEFAULT
     ;;
   "zsh")
-    ln -sf ~/dotfiles/zsh/.zshrc ~/.zshrc
-    source ~/.zshrc
+    ln -sf $HOME/dotfiles/zsh/.zshrc $HOME/.zshrc
+    source $HOME/.zshrc
     echo $DEFAULT
     ;;
   "bash")
-    ln -sf ~/dotfiles/bash/.bash_profile ~/.bash_profile
-    source ~/.bashrc
+    ln -sf $HOME/dotfiles/bash/.bash_profile $HOME/.bash_profile
+    source $HOME/.bashrc
     echo $DEFAULT
     ;;
   *)
@@ -39,18 +39,18 @@ esac
 
 
 ### setup git config ###
-ln -sf ~/dotfiles/git/.gitconfig ~/.gitconfig
-ln -sf ~/dotfiles/git/.gitignore_global ~/.gitignore_global
+ln -sf $HOME/dotfiles/git/.gitconfig $HOME/.gitconfig
+ln -sf $HOME/dotfiles/git/.gitignore_global $HOME/.gitignore_global
 
 
 ### setup tmux config ###
-ln -sf ~/dotfiles/tmux/.tmux.conf ~/.tmux.conf
+ln -sf $HOME/dotfiles/tmux/.tmux.conf $HOME/.tmux.conf
 
 
 ### setup nix config if it is nixos ###
 case "$(uname -n)" in
   "nixbox")
-    sudo ln -s ~/dotfiles/nix/service-configuration.nix /etc/nixos/service-configuration.nix
+    sudo ln -s $HOME/dotfiles/nix/service-configuration.nix /etc/nixos/service-configuration.nix
     sudo nixos-rebuild switch
     ;;
 esac
