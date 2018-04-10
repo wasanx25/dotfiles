@@ -48,3 +48,5 @@ zle -N fzf-find-file
 bindkey '^q' fzf-find-file
 
 [ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"
+
+export PATH=${HOME}/.cargo/bin:${PATH}
