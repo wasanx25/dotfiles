@@ -12,6 +12,10 @@ fi
 ln -sf $HOME/dotfiles/vim/.vimrc $HOME/.vimrc
 
 
+### setup lessfilter config ###
+ln -sf $HOME/dotfiles/.lessfilter $HOME/.lessfilter
+
+
 ### setup shell by default shell###
 DEFAULT=${SHELL##*/}
 

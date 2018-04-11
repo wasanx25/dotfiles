@@ -50,3 +50,6 @@ bindkey '^q' fzf-find-file
 [ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"
 
 export PATH=${HOME}/.cargo/bin:${PATH}
+
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
