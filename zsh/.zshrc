@@ -53,3 +53,8 @@ export PATH=${HOME}/.cargo/bin:${PATH}
 
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
+
+if which jenv > /dev/null; then
+  export JENV_ROOT=/usr/local/var/jenv
+  eval "$(jenv init -)"
+fi
