@@ -1,6 +1,6 @@
 #!/bin/sh
 case "$1" in
-    *.c|*.go|*.java|*.js|*.php|*.pl|*.py|\
+    *.c|*.go|*.java|*.js|*.json|*.php|*.pl|*.py|\
     *.rb|*.sh|*.sql)
         pygmentize -f 256 "$1";;
     .bashrc|.bash_aliases|.bash_environment)
