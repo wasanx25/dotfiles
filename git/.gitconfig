@@ -16,3 +16,5 @@
 [core]
 	editor = vim -c \"set fenc=utf-8\"
 	excludesfile = ~/.gitignore_global
+[fetch]
+	prune = true
