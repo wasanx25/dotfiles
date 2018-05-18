@@ -58,3 +58,6 @@ if which jenv > /dev/null; then
   export JENV_ROOT=/usr/local/var/jenv
   eval "$(jenv init -)"
 fi
+
+export EDITOR=vim
+eval "$(direnv hook zsh)"
