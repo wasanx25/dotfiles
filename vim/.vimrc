@@ -103,6 +103,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'cakebaker/scss-syntax.vim'
   NeoBundle 'bigbrozer/vim-nagios'
   autocmd BufRead,BufNewFile *.cfg set filetype=nagios
+  NeoBundle 'udalov/kotlin-vim'
 
   " Automatically update tags
   NeoBundle 'szw/vim-tags'
