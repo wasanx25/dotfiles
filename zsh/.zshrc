@@ -61,3 +61,13 @@ fi
 
 export EDITOR=vim
 eval "$(direnv hook zsh)"
+
+function fzf-ghq-combo () {
+  local selected_dir=$(ghq list -p | fzf --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+}
+zle -N fzf-ghq-combo
+bindkey '^]' fzf-ghq-combo
