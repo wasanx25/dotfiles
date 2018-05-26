@@ -6,7 +6,7 @@ alias drma='docker rm $(docker ps -a -q)'
 alias fig='docker-compose'
 alias trr='terraform'
 
-export ZSH=`pwd`/zsh/oh-my-zsh
+export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
 
 plugins=(terraform kubectl grails bundle gradle vagrant mix mvn nix brew git docker docker-compose ruby gem rails web-search)

@@ -29,7 +29,8 @@ case $DEFAULT in
     ;;
   "zsh")
     ln -sf $CURRENT_DIR/zsh/.zshrc $HOME/.zshrc
-    # source $HOME/.zshrc
+    ln -sf $CURRENT_DIR/zsh/oh-my-zsh $HOME/oh-my-zsh
+    source $HOME/.zshrc
     echo $DEFAULT
     ;;
   "bash")
