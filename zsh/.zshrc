@@ -40,3 +40,7 @@ export EDITOR=vim
 eval "$(direnv hook zsh)"
 
 source $HOME/zsh_functions/extend_fzf.sh
+
+autoload colors
+colors
+RPROMPT="%B%{${fg[red]}%}[%~]%{${reset_color}%}%b"
