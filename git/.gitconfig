@@ -11,7 +11,7 @@
 	log-graph = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Creset%s'
 	log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
 [user]
-	name = wataru0225
+	name = wasanx25
 	email = wataru.kikuchi0225@gmail.com
 [core]
 	editor = vim -c \"set fenc=utf-8\"
