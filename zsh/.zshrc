@@ -14,7 +14,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Go 環境設定
 if [ -x "`which go`" ]; then
-    export GOPATH=$HOME/.go
+    export GOPATH=$HOME
     export PATH=$PATH:$GOPATH/bin
 fi
 
