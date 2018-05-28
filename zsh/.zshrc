@@ -24,29 +24,6 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
 
-function fzf-select-history() {
-  BUFFER=$(fc -l -r -n 1 | fzf --query "$LBUFFER")
-  CURSOR=$#BUFFER
-  zle redisplay
-}
-
-zle -N fzf-select-history
-bindkey '^R' fzf-select-history
-
-function fzf-find-file() {
-  if git rev-parse 2> /dev/null; then
-      source_files=$(git ls-files)
-  else
-      source_files=$(find . -type f)
-  fi
-  BUFFER=$BUFFER$(echo $source_files | fzf --prompt "[find file]")
-  CURSOR=$#BUFFER
-  zle redisplay
-}
-
-zle -N fzf-find-file
-bindkey '^q' fzf-find-file
-
 [ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"
 
 export PATH=${HOME}/.cargo/bin:${PATH}
@@ -62,12 +39,4 @@ fi
 export EDITOR=vim
 eval "$(direnv hook zsh)"
 
-function fzf-ghq-combo () {
-  local selected_dir=$(ghq list -p | fzf --query "$LBUFFER")
-  if [ -n "$selected_dir" ]; then
-    BUFFER="cd ${selected_dir}"
-    zle accept-line
-  fi
-}
-zle -N fzf-ghq-combo
-bindkey '^]' fzf-ghq-combo
+source $HOME/zsh_functions/extend_fzf.sh

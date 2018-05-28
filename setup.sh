@@ -30,6 +30,7 @@ case $DEFAULT in
   "zsh")
     ln -sf $CURRENT_DIR/zsh/.zshrc $HOME/.zshrc
     ln -sf $CURRENT_DIR/zsh/oh-my-zsh $HOME/oh-my-zsh
+    ln -sf $CURRENT_DIR/zsh/function/ $HOME/zsh_functions
     source $HOME/.zshrc
     echo $DEFAULT
     ;;
