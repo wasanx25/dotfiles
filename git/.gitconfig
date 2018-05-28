@@ -19,4 +19,4 @@
 [fetch]
 	prune = true
 [ghq]
-	root = /Users/wataru0225/src
+	root = ~/src
