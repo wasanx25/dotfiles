@@ -20,7 +20,7 @@ function fzf-find-file() {
 }
 
 zle -N fzf-find-file
-bindkey '^q' fzf-find-file
+bindkey '^[' fzf-find-file
 
 function fzf-select-history() {
   BUFFER=$(fc -l -r -n 1 | fzf --query "$LBUFFER")
