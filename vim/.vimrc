@@ -77,6 +77,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   "   let g:ackprg = 'ag --vimgrep'
   " endif
   NeoBundle 'rking/ag.vim'
+  " clang completion plugin
+  NeoBundle 'justmao945/vim-clang'
 
   " Syntax Highlight
   NeoBundle 'vim-scripts/groovy.vim'
