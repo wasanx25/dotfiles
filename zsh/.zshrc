@@ -39,7 +39,7 @@ fi
 export EDITOR=vim
 eval "$(direnv hook zsh)"
 
-source $HOME/zsh_functions/extend_fzf.sh
+source $HOME/zshfuns/extend_fzf.sh
 
 autoload colors
 colors
