@@ -30,3 +30,10 @@ function fzf-select-history() {
 
 zle -N fzf-select-history
 bindkey '^R' fzf-select-history
+
+function fbr() {
+  local branches branch
+  branches=$(git branch -vv) &&
+  branch=$(echo "$branches" | fzf +m) &&
+  git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
+}
