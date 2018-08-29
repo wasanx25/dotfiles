@@ -17,14 +17,8 @@ set fileencoding=utf-8
 set encoding=utf-8
 
 set rtp+=$GOROOT/misc/vim
-exe "set rtp+=".globpath($GOPATH, "src/github.com/nsf/gocode/vim")
+exe "set rtp+=".globpath($GOPATH, "src/github.com/mdempsky/gocode/vim")
 set completeopt=menu,preview
-
-let OSTYPE = system('kikuchi')
-if OSTYPE == "Linux\n"
-    noremap y y:wv<CR>
-    noremap p :rv!<CR>p
-endif
 
 set viminfo='50,\"3000,:0,n~/.viminfo
 
@@ -116,7 +110,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   " protobuffer syntax
   NeoBundle 'uarun/vim-protobuf'
   " gocode
-  NeoBundle 'nsf/gocode'
+  NeoBundle 'mdempsky/gocode'
 
   NeoBundle 'pangloss/vim-javascript'
   NeoBundle 'mxw/vim-jsx'
