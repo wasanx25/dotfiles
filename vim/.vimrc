@@ -100,6 +100,7 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'bigbrozer/vim-nagios'
   autocmd BufRead,BufNewFile *.cfg set filetype=nagios
   NeoBundle 'udalov/kotlin-vim'
+  NeoBundle 'posva/vim-vue'
 
   " Automatically update tags
   NeoBundle 'szw/vim-tags'
