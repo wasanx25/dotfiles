@@ -5,6 +5,7 @@ alias d='docker'
 alias drma='docker rm $(docker ps -a -q)'
 alias fig='docker-compose'
 alias trr='terraform'
+alias ghr='github-release'
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
