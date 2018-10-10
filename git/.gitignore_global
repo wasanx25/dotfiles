@@ -9,3 +9,4 @@
 *.log
 .envrc
 .sass-cache
+a.out
