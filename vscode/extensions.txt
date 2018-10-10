@@ -1,2 +1,4 @@
+austin.code-gnu-global
+ms-vscode.cpptools
 ms-vscode.Go
 vscodevim.vim
