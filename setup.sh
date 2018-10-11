@@ -23,19 +23,19 @@ DEFAULT=${SHELL##*/}
 
 case $DEFAULT in
   "fish")
-    ln -sf $CURRENT_DIR/fish/config.fish $HOME/.config/fish/config.fish
+    ln -sf $CURRENT_DIR/shells/fish/config.fish $HOME/.config/fish/config.fish
     source $HOME/.config/fish/config.fish
     echo $DEFAULT
     ;;
   "zsh")
-    ln -sf $CURRENT_DIR/zsh/.zshrc $HOME/.zshrc
-    ln -sf $CURRENT_DIR/zsh/oh-my-zsh $HOME/oh-my-zsh
-    ln -sf $CURRENT_DIR/zsh/function/ $HOME/zshfuns
+    ln -sf $CURRENT_DIR/shells/zsh/.zshrc $HOME/.zshrc
+    ln -sf $CURRENT_DIR/shells/zsh/oh-my-zsh $HOME/oh-my-zsh
+    ln -sf $CURRENT_DIR/shells/zsh/function $HOME/zshfuns
     source $HOME/.zshrc
     echo $DEFAULT
     ;;
   "bash")
-    ln -sf $CURRENT_DIR/bash/.bash_profile $HOME/.bash_profile
+    ln -sf $CURRENT_DIR/shells/bash/.bash_profile $HOME/.bash_profile
     source $HOME/.bashrc
     echo $DEFAULT
     ;;
