@@ -11,7 +11,7 @@ if [ ! -e $HOME/.vim/bundle/neobundle.vim ]; then
   git clone https://github.com/Shougo/neobundle.vim $HOME/.vim/bundle/neobundle.vim
 fi
 
-ln -sf $CURRENT_DIR/vim/.vimrc $HOME/.vimrc
+ln -sf $CURRENT_DIR/editors/vim/.vimrc $HOME/.vimrc
 
 
 ### setup lessfilter config ###
