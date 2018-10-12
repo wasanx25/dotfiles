@@ -1,4 +1,6 @@
 austin.code-gnu-global
+GrapeCity.gc-excelviewer
 ms-vscode.cpptools
 ms-vscode.Go
+vscjava.vscode-maven
 vscodevim.vim
