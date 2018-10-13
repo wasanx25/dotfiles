@@ -1,6 +1,10 @@
 austin.code-gnu-global
 GrapeCity.gc-excelviewer
+Hridoy.rails-snippets
+kaiwood.endwise
+misogi.ruby-rubocop
 ms-vscode.cpptools
 ms-vscode.Go
+rebornix.ruby
 vscjava.vscode-maven
 vscodevim.vim
