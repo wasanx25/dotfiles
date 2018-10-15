@@ -16,7 +16,7 @@ case "$(uname)" in
 esac
 
 if [ ! -e bin/mitamae-${version} ]; then
-  wget "https://github.com/k0kubun/mitamae/releases/download/v${version}/${file_name}"
+  wget "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${file_name}"
   chmod +x ${file_name}
   mv ${file_name} bin/mitamae-${version}
 fi
