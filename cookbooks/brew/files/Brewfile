@@ -22,6 +22,11 @@ brew 'tree'
 brew 'wget'
 brew 'zsh'
 
-# cask 'alfred'
+cask 'alfred'
+cask 'authy'
+cask 'fork'
+cask 'postman'
+cask 'skitch'
+cask 'teamsql'
 
 mas 'GIPHY CAPTURE', id: 668208984
