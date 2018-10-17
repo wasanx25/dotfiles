@@ -12,3 +12,5 @@ link "#{ENV['HOME']}/zshfuns" do
   to File.expand_path('.config/shells/zsh/function')
   force true
 end
+
+execute "/bin/zsh -c \"source #{ENV['HOME']}/.zshrc\""
