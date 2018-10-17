@@ -25,8 +25,11 @@ brew 'zsh'
 cask 'alfred'
 cask 'authy'
 cask 'fork'
+cask 'google-cloud-sdk'
+cask 'karabiner-elements'
 cask 'postman'
 cask 'skitch'
 cask 'teamsql'
+cask 'visual-studio-code'
 
 mas 'GIPHY CAPTURE', id: 668208984
