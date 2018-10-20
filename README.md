@@ -2,10 +2,17 @@
 
 ## start
 
+requirements:
+
+- Mac
+  - Apple ID Sign in
+
 ```
-$ git clone https://github.com/wataru0225/dotfiles.git ~
-$ cd dotfiles
-$ git submodule init
-$ git submodule update
-$ sh setup.sh
+$ sh https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstrap.sh | sh
+```
+
+## update
+
+```
+$ bin/mitame-${version} local lib/recipe.rb
 ```

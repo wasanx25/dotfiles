@@ -45,3 +45,9 @@ source $HOME/zshfuns/extend_fzf.sh
 autoload colors
 colors
 RPROMPT="%B%{${fg[red]}%}[%~]%{${reset_color}%}%b"
+
+case "$(uname)" in
+  "Darwin")
+    export PATH=${PATH}:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
+    ;;
+esac
