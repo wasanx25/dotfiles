@@ -1,5 +1,6 @@
 link '/usr/local/bin' do
   to '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'
+  force true
 end
 
 execute 'cat extensions.txt | xargs -L 1 code --install-extension' do
