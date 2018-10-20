@@ -25,7 +25,7 @@ esac
 if [ ! $(which git) ]; then
   git_version="2.19.1"
   git_file="git-${git_version}"
-  wget "https://www.kernel.org/pub/software/scm/git/${git_file}.tar.gz"
+  curl -O "https://www.kernel.org/pub/software/scm/git/${git_file}.tar.gz"
   tar -zxf ${git_file}.tar.gz
   cd ${git_file}
   make configure
@@ -38,7 +38,7 @@ fi
 
 if [ ! $(which ghq) ]; then
   ghq_version="0.8.0"
-  wget "https://github.com/motemen/ghq/releases/download/v0.8.0/${ghq_file}.zip"
+  curl -O "https://github.com/motemen/ghq/releases/download/v0.8.0/${ghq_file}.zip"
   unzip ${ghq_file}.zip
   mv ${ghq_file}/ghq $HOME/bin
   rm -rf ${ghq_file}
@@ -49,7 +49,7 @@ ghq get https://github.com/wasanx25/dotfiles.git
 cd $(ghq root)/github.com/wasanx25/dotfiles
 
 if [ ! -e bin/mitamae-${version} ]; then
-  wget "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${mitamae_file}"
+  curl -O "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${mitamae_file}"
   chmod +x ${mitamae_file}
   mv ${mitamae_file} ./bin/mitamae-${version}
 fi
