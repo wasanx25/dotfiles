@@ -7,6 +7,10 @@ if [ ! -e $HOME/bin ]; then
   mkdir $HOME/bin
 fi
 
+if [ ! $(echo $PATH | grep $HOME/bin) ]; then
+  export PATH=$PATH:$HOME/bin
+fi
+
 case "$(uname)" in
   "Darwin")
     ghq_file="ghq_darwin_amd64"
