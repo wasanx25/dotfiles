@@ -3,9 +3,8 @@ link "#{ENV['HOME']}/.zshrc" do
   force true
 end
 
-link "#{ENV['HOME']}/oh-my-zsh" do
-  to File.expand_path('.config/shells/zsh/oh-my-zsh')
-  force true
+git "#{ENV['HOME']}/oh-my-zsh" do
+  repository 'https://github.com/robbyrussell/oh-my-zsh.git'
 end
 
 link "#{ENV['HOME']}/zshfuns" do
