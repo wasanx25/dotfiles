@@ -2,12 +2,19 @@
 set -ue
 version="1.6.3"
 
+cd $HOME
+if [ ! -e $HOME/bin ]; then
+  mkdir $HOME/bin
+fi
+
 case "$(uname)" in
   "Darwin")
-    file_name="mitamae-x86_64-darwin"
+    ghq_file="ghq_darwin_amd64"
+    mitamae_file="mitamae-x86_64-darwin"
     ;;
   "Linux")
-    file_name="mitamae-x86_64-linux"
+    ghq_file="ghq_linux_amd64"
+    mitamae_file="mitamae-x86_64-linux"
     ;;
   *)
     echo "unknown uname: $(uname)"
@@ -15,10 +22,36 @@ case "$(uname)" in
     ;;
 esac
 
+if [ ! $(which git) ]; then
+  git_version="2.19.1"
+  git_file="git-${git_version}"
+  wget "https://www.kernel.org/pub/software/scm/git/${git_file}.tar.gz"
+  tar -zxf ${git_file}.tar.gz
+  cd ${git_file}
+  make configure
+  ./configure --prefix=/usr
+  make
+  make install
+  cd $HOME
+  rm -rf $HOME/${git_file}
+fi
+
+if [ ! $(which ghq) ]; then
+  ghq_version="0.8.0"
+  wget "https://github.com/motemen/ghq/releases/download/v0.8.0/${ghq_file}.zip"
+  unzip ${ghq_file}.zip
+  mv ${ghq_file}/ghq $HOME/bin
+  rm -rf ${ghq_file}
+  git config --global ghq.root ~/src
+fi
+
+ghq get https://github.com/wasanx25/dotfiles.git
+cd $(ghq root)/github.com/wasanx25/dotfiles
+
 if [ ! -e bin/mitamae-${version} ]; then
-  wget "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${file_name}"
-  chmod +x ${file_name}
-  mv ${file_name} bin/mitamae-${version}
+  wget "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${mitamae_file}"
+  chmod +x ${mitamae_file}
+  mv ${mitamae_file} ./bin/mitamae-${version}
 fi
 
 bin/mitamae-${version} local lib/recipe.rb
