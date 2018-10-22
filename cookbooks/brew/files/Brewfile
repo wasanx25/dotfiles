@@ -33,4 +33,4 @@ cask 'skitch'
 cask 'teamsql'
 cask 'visual-studio-code'
 
-mas 'GIPHY CAPTURE', id: 668208984
+# mas 'GIPHY CAPTURE', id: 668208984
