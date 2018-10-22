@@ -1,3 +1,4 @@
+brew 'bat'
 brew 'coreutils'
 brew 'direnv'
 brew 'embulk'
