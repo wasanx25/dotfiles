@@ -2,5 +2,10 @@
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
   "files.trimFinalNewlines": true,
-  "files.trimTrailingWhitespace": true
+  "files.trimTrailingWhitespace": true,
+  "go.gopath": "~",
+  "go.useLanguageServer": true,
+  "go.languageServerExperimentalFeatures": {
+    "autoComplete": true
+  }
 }
