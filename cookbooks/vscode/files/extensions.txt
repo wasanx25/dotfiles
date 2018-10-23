@@ -1,4 +1,5 @@
 austin.code-gnu-global
+foxundermoon.shell-format
 GrapeCity.gc-excelviewer
 Hridoy.rails-snippets
 kaiwood.endwise
