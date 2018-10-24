@@ -7,5 +7,6 @@
   "go.useLanguageServer": true,
   "go.languageServerExperimentalFeatures": {
     "autoComplete": true
-  }
+  },
+  "editor.formatOnSave": true
 }
