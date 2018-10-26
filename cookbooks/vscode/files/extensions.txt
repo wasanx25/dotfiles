@@ -7,5 +7,6 @@ misogi.ruby-rubocop
 ms-vscode.cpptools
 ms-vscode.Go
 rebornix.ruby
+tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
 vscodevim.vim
