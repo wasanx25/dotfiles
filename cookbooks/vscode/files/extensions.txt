@@ -1,4 +1,6 @@
 austin.code-gnu-global
+dbaeumer.vscode-eslint
+eg2.tslint
 foxundermoon.shell-format
 GrapeCity.gc-excelviewer
 Hridoy.rails-snippets
@@ -6,6 +8,7 @@ kaiwood.endwise
 misogi.ruby-rubocop
 ms-vscode.cpptools
 ms-vscode.Go
+octref.vetur
 rebornix.ruby
 tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
