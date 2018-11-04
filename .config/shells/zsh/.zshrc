@@ -51,3 +51,5 @@ case "$(uname)" in
     export PATH=${PATH}:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin
     ;;
 esac
+# added by travis gem
+[ -f /Users/kikuchi/.travis/travis.sh ] && source /Users/kikuchi/.travis/travis.sh
