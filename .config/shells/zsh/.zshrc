@@ -38,7 +38,7 @@ if which jenv > /dev/null; then
 fi
 
 export EDITOR=vim
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 source $HOME/zshfuns/extend_fzf.sh
 
