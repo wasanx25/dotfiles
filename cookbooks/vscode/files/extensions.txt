@@ -1,4 +1,5 @@
 austin.code-gnu-global
+CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 eg2.tslint
 foxundermoon.shell-format
