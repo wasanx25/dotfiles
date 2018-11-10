@@ -6,6 +6,7 @@ alias drma='docker rm $(docker ps -a -q)'
 alias fig='docker-compose'
 alias trr='terraform'
 alias ghr='github-release'
+alias vi='vim'
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
