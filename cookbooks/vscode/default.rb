@@ -10,7 +10,7 @@ when 'darwin'
   end
 
   link "#{ENV['HOME']}/Library/Application Support/Code/User/settings.json" do
-    to File.expand_path('.config/editors/vscode/settings.json')
+    to File.expand_path('.config/editors/vscode/darwin/settings.json')
     force true
   end
 when 'arch'
@@ -29,7 +29,7 @@ when 'arch'
   end
 
   link "#{ENV['HOME']}/.config/Code/User/settings.json" do
-    to File.expand_path('.config/editors/vscode/settings.json')
+    to File.expand_path('.config/editors/vscode/arch/settings.json')
     force true
   end
 end

@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "window.zoomLevel": 0,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true,
+  "go.gopath": "~",
+  "go.useLanguageServer": true,
+  "go.languageServerExperimentalFeatures": {
+    "autoComplete": true
+  },
+  "editor.formatOnSave": true,
+  "vetur.format.defaultFormatter.js": "none",
+  "vetur.format.defaultFormatter.ts": "none",
+  "editor.fontWeight": "bold",
+  "editor.fontFamily": "Source Code Pro"
+}
