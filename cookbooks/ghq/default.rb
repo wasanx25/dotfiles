@@ -1,6 +1,6 @@
 case node[:platform]
 when 'arch'
-  if false # TODO which code
+  if run_command('which ghq', error: false).exit_status == 1
     git "#{ENV['HOME']}/ghq" do
       repository 'https://aur.archlinux.org/ghq.git'
     end

@@ -3,7 +3,7 @@ when 'arch'
   package 'libcurl-gnutls'
   package 'libgnome-keyring'
 
-  if false # TODO which code
+  if run_command('test -d /opt/gitkraken', error: false).exit_status == 1
     git "#{ENV['HOME']}/gitkraken" do
       repository 'https://aur.archlinux.org/gitkraken.git'
     end

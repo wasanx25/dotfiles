@@ -14,7 +14,7 @@ when 'darwin'
     force true
   end
 when 'arch'
-  if false # TODO which code
+  if run_command('test -d /opt/visual-studio-code', error: false).exit_status == 1
     git "#{ENV['HOME']}/visual-studio-code-bin" do
       repository 'https://aur.archlinux.org/visual-studio-code-bin.git'
     end
