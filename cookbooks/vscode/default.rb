@@ -19,12 +19,17 @@ when 'arch'
       repository 'https://aur.archlinux.org/visual-studio-code-bin.git'
     end
 
-    excute 'makepkg -S' do
+    execute 'makepkg' do
+      user 'root'
       cwd "#{ENV['HOME']}/visual-studio-code-bin"
     end
 
-    excute 'pacman -U visual-studio-code-bin-*.pkg.tar.xz' do
+    execute 'pacman -U visual-studio-code-bin-*.pkg.tar.xz' do
       cwd "#{ENV['HOME']}/visual-studio-code-bin"
+    end
+
+    execute "rm -rf #{ENV['HOME']}/visual-studio-code-bin" do
+      only_if "test -d #{ENV['HOME']}/visual-studio-code-bin"
     end
   end
 
