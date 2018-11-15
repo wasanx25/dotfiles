@@ -14,23 +14,8 @@ when 'darwin'
     force true
   end
 when 'arch'
-  if run_command('test -d /opt/visual-studio-code', error: false).exit_status == 1
-    git "#{ENV['HOME']}/visual-studio-code-bin" do
-      repository 'https://aur.archlinux.org/visual-studio-code-bin.git'
-    end
-
-    execute 'makepkg' do
-      user 'root'
-      cwd "#{ENV['HOME']}/visual-studio-code-bin"
-    end
-
-    execute 'pacman -U visual-studio-code-bin-*.pkg.tar.xz' do
-      cwd "#{ENV['HOME']}/visual-studio-code-bin"
-    end
-
-    execute "rm -rf #{ENV['HOME']}/visual-studio-code-bin" do
-      only_if "test -d #{ENV['HOME']}/visual-studio-code-bin"
-    end
+  pacman_build 'visual-studio-code-bin' do
+    app_path '/opt/visual-studio-code'
   end
 
   link "#{ENV['HOME']}/.config/Code/User/settings.json" do
