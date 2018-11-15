@@ -5,11 +5,11 @@ when 'arch'
       repository 'https://aur.archlinux.org/ghq.git'
     end
 
-    excute 'makepkg -S' do
+    execute 'makepkg -S' do
       cwd "#{ENV['HOME']}/ghq"
     end
 
-    excute 'pacman -U ghq-*.pkg.tar.xz' do
+    execute 'pacman -U ghq-*.pkg.tar.xz' do
       cwd "#{ENV['HOME']}/ghq"
     end
   end
