@@ -29,4 +29,9 @@ define :pacman_build, app_path: nil do
   end
 end
 
+include_cookbook 'zsh'
+include_cookbook 'tmux'
+include_cookbook 'vscode'
+include_cookbook 'git'
+include_cookbook 'vim'
 include_cookbook 'gitkraken'
