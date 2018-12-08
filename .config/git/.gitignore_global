@@ -4,7 +4,7 @@
 *tags
 *.tags
 *.tags1
-.idea/*
+**/.idea/*
 *.iml
 *.log
 .envrc
