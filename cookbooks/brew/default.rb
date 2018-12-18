@@ -1,4 +1,4 @@
-execute 'curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install' do
+execute '/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"' do
   not_if 'which brew'
 end
 
