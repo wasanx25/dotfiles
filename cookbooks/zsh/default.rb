@@ -14,7 +14,8 @@ end
 
 case node[:platform]
 when 'darwin'
-  execute "/bin/zsh -c \"source #{ENV['HOME']}/.zshrc\""
+  # TODO execute Failed
+  # execute "/bin/zsh -c \"source #{ENV['HOME']}/.zshrc\""
 when 'arch'
   # TODO execute Failed
   # execute "/usr/bin/zsh -c \"source #{ENV['HOME']}/.zshrc\""
