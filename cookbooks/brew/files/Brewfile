@@ -1,6 +1,7 @@
 brew 'awscli'
 brew 'bat'
 brew 'bats'
+brew 'circleci'
 brew 'coreutils'
 brew 'direnv'
 # brew 'embulk'
