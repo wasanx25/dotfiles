@@ -28,6 +28,7 @@ brew 'tree'
 brew 'wget'
 brew 'zsh'
 
+cask 'alacritty'
 cask 'alfred'
 cask 'authy'
 cask 'fork'
