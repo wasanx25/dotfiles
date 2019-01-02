@@ -1,6 +1,8 @@
 austin.code-gnu-global
+castwide.solargraph
 CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
+dunstontc.viml
 eg2.tslint
 foxundermoon.shell-format
 GrapeCity.gc-excelviewer
