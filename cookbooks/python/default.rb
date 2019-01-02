@@ -1,3 +1,3 @@
-execute 'cat plugins.txt | xargs -L 1 pip3 install' do
+execute 'pip3 install -r requirements.txt' do
   cwd File.expand_path('../files', __FILE__)
 end
