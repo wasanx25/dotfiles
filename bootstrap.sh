@@ -37,6 +37,8 @@ if [ ! $(which git) ]; then
   rm -rf $HOME/${git_file}
 fi
 
+git --version
+
 if [ ! $(which ghq) ]; then
   ghq_version="0.8.0"
   curl -L -O "https://github.com/motemen/ghq/releases/download/v0.8.0/${ghq_file}.zip"
