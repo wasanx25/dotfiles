@@ -1,6 +1,5 @@
 #! /bin/sh
 set -ue
-version="1.6.3"
 
 cd $HOME
 if [ ! -e $HOME/bin ]; then
@@ -14,11 +13,9 @@ fi
 case "$(uname)" in
   "Darwin")
     ghq_file="ghq_darwin_amd64"
-    mitamae_file="mitamae-x86_64-darwin"
     ;;
   "Linux")
     ghq_file="ghq_linux_amd64"
-    mitamae_file="mitamae-x86_64-linux"
     ;;
   *)
     echo "unknown uname: $(uname)"
@@ -52,10 +49,6 @@ fi
 ghq get https://github.com/wasanx25/dotfiles.git
 cd $(ghq root)/github.com/wasanx25/dotfiles
 
-if [ ! -e bin/mitamae-${version} ]; then
-  curl -L -O "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${mitamae_file}"
-  chmod +x ${mitamae_file}
-  mv ${mitamae_file} ./bin/mitamae-${version}
-fi
+sh install_mitamae.sh
 
 bin/mitamae-${version} local lib/recipe.rb
