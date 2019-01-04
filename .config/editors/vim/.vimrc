@@ -139,10 +139,10 @@ nnoremap <silent><C-e> :NERDTreeToggle<CR>
 " reopen vim from previous cursor position
 """"""""""""""""""""""""""""""
 if has("autocmd")
-    autocmd BufReadPost *
-    \ if line("'\"") > 0 && line ("'\"") <= line("$") |
-    \   exe "normal! g'\"" |
-    \ endif
+  autocmd BufReadPost *
+  \ if line("'\"") > 0 && line ("'\"") <= line("$") |
+  \   exe "normal! g'\"" |
+  \ endif
 endif
 """"""""""""""""""""""""""""""
 
@@ -152,11 +152,11 @@ endif
 nnoremap <expr> / _(":%s/<Cursor>/&/gn")
 
 function! s:move_cursor_pos_mapping(str, ...)
-    let left = get(a:, 1, "<Left>")
-    let lefts = join(map(split(matchstr(a:str, '.*<Cursor>\zs.*\ze'), '.\zs'), 'left'), "")
-    return substitute(a:str, '<Cursor>', '', '') . lefts
+  let left = get(a:, 1, "<Left>")
+  let lefts = join(map(split(matchstr(a:str, '.*<Cursor>\zs.*\ze'), '.\zs'), 'left'), "")
+  return substitute(a:str, '<Cursor>', '', '') . lefts
 endfunction
 
 function! _(str)
-    return s:move_cursor_pos_mapping(a:str, "\<Left>")
+  return s:move_cursor_pos_mapping(a:str, "\<Left>")
 endfunction
