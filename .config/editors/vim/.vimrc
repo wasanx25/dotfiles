@@ -126,6 +126,7 @@ nnoremap <C-]> g<C-]>
 
 " NERDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
+let g:NERDTreeNodeDelimiter = "\u00a0"
 
 """"""""""""""""""""""""""""""
 " auto complete close bracket
@@ -160,3 +161,4 @@ endfunction
 function! _(str)
   return s:move_cursor_pos_mapping(a:str, "\<Left>")
 endfunction
+
