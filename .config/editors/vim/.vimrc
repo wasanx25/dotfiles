@@ -28,6 +28,8 @@ au BufRead,BufNewFile */Gemfile set ft=ruby
 au BufRead,BufNewFile */Gemfile.lock set ft=ruby
 au BufRead,BufNewFile */Brewfile set ft=ruby
 
+let mapleader = "\<Space>"
+
 "--------------------------------------------------------------------------
 " neobundle
 "------------------------------------------------------------------
@@ -87,7 +89,6 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'vim-scripts/nginx.vim'
   NeoBundle 'kballard/vim-swift'
   NeoBundle 'kchmck/vim-coffee-script'
-  NeoBundle 'fatih/vim-go'
   NeoBundle 'elzr/vim-json'
   NeoBundle 'slim-template/vim-slim'
   NeoBundle 'leafgarland/typescript-vim'
@@ -111,11 +112,12 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   set tags+=.Gemfile.lock.tags
   " protobuffer syntax
   NeoBundle 'uarun/vim-protobuf'
-  " gocode
-  NeoBundle 'mdempsky/gocode'
 
   NeoBundle 'pangloss/vim-javascript'
   NeoBundle 'mxw/vim-jsx'
+
+  NeoBundle 'prabirshrestha/async.vim'
+  NeoBundle 'prabirshrestha/vim-lsp'
 
 call neobundle#end()
 
@@ -162,3 +164,13 @@ function! _(str)
   return s:move_cursor_pos_mapping(a:str, "\<Left>")
 endfunction
 
+if executable('go-langserver')
+  au User lsp_setup call lsp#register_server({
+    \ 'name': 'go-langserver',
+    \ 'cmd': {server_info->['go-langserver', '-mode', 'stdio']},
+    \ 'whitelist': ['go'],
+    \ })
+endif
+
+nmap <silent> <Leader>d :LspDefinition<CR>
+nmap <silent> <Leader>i :LspImplementation<CR>
