@@ -39,7 +39,7 @@ if which jenv > /dev/null; then
 fi
 
 export EDITOR=vim
-# eval "$(direnv hook zsh)"
+eval "$(direnv hook zsh)"
 
 source $HOME/zshfuns/extend_fzf.sh
 
@@ -54,3 +54,4 @@ case "$(uname)" in
 esac
 # added by travis gem
 [ -f /Users/kikuchi/.travis/travis.sh ] && source /Users/kikuchi/.travis/travis.sh
+
