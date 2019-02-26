@@ -27,6 +27,7 @@ au BufRead,BufNewFile */Vagrantfile set ft=ruby
 au BufRead,BufNewFile */Gemfile set ft=ruby
 au BufRead,BufNewFile */Gemfile.lock set ft=ruby
 au BufRead,BufNewFile */Brewfile set ft=ruby
+au BufRead,BufNewFile */Dangerfile set ft=ruby
 
 let mapleader = "\<Space>"
 
