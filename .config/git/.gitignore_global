@@ -11,3 +11,4 @@
 .sass-cache
 a.out
 vendor/
+out/
