@@ -21,3 +21,5 @@
 	prune = true
 [ghq]
 	root = ~/src
+[pull]
+	rebase = true
