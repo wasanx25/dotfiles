@@ -55,3 +55,4 @@ esac
 # added by travis gem
 [ -f /Users/kikuchi/.travis/travis.sh ] && source /Users/kikuchi/.travis/travis.sh
 
+PROMPT='${ret_status} %{$fg[white]%}$(date +%m/%d-%H:%M:%S) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
