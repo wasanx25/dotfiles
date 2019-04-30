@@ -13,6 +13,11 @@ when 'darwin'
     to File.expand_path('.config/editors/vscode/darwin/settings.json')
     force true
   end
+
+  link "#{ENV['HOME']}/Library/Application Support/Code/User/keybindings.json" do
+    to File.expand_path('.config/editors/vscode/darwin/keybindings.json')
+    force true
+  end
 when 'arch'
   pacman_build 'visual-studio-code-bin' do
     app_path '/opt/visual-studio-code'
