@@ -4,9 +4,11 @@ CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 dunstontc.viml
 eg2.tslint
+formulahendry.code-runner
 foxundermoon.shell-format
 GrapeCity.gc-excelviewer
 Hridoy.rails-snippets
+jebbs.plantuml
 kaiwood.endwise
 misogi.ruby-rubocop
 ms-vscode.cpptools
