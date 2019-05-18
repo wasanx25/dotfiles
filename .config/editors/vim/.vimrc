@@ -121,6 +121,9 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'prabirshrestha/async.vim'
   NeoBundle 'prabirshrestha/vim-lsp'
 
+  " SQLFmt
+  NeoBundle 'mattn/vim-sqlfmt'
+
 call neobundle#end()
 
 filetype plugin indent on     " Required!
