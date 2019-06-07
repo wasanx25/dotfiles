@@ -13,3 +13,4 @@ a.out
 vendor/
 out/
 .vscode
+*.kexe
