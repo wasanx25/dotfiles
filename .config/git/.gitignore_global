@@ -10,9 +10,11 @@
 *~
 .DS_Store
 .envrc
+.gradletasknamecache
 .java-version
 .sass-cache
 .vscode
 a.out
+build/
 out/
 vendor/
