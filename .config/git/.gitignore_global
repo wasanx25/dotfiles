@@ -1,6 +1,7 @@
 **/.gradle/*
 **/.idea/*
 *.iml
+*.jar
 *.kexe
 *.log
 *.swp
