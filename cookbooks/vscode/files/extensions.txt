@@ -15,6 +15,7 @@ ms-vscode.cpptools
 ms-vscode.Go
 octref.vetur
 rebornix.ruby
+rust-lang.rust
 tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
 vscodevim.vim
