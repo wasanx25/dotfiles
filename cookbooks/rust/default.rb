@@ -1,4 +1,4 @@
-execute 'curl https://sh.rustup.rs -sSf | sh' do
+execute 'curl https://sh.rustup.rs -sSf | sh -s -- -y' do
   not_if 'rustc -V'
 end
 
