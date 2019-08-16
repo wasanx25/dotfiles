@@ -5,3 +5,5 @@ end
 execute 'rustup component add rust-src' do
   not_if "test -d #{ENV['HOME']}/.multirust"
 end
+
+execute 'rustup toolchain install nightly'
