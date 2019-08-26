@@ -20,3 +20,5 @@
 	prune = true
 [ghq]
 	root = ~/src
+[init]
+	templatedir = ~/.config/git/templates/

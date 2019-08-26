@@ -9,3 +9,8 @@ link "#{ENV['HOME']}/.config/git/ignore" do
   to File.expand_path('.config/git/.gitignore_global')
   force true
 end
+
+link "#{ENV['HOME']}/.config/git/templates" do
+  to File.expand_path('.config/git/templates')
+  force true
+end

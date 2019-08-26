@@ -1,0 +1,14 @@
+#!/bin/sh
+
+push_command=$(ps -ocommand= -p $PPID)
+force_options='force|\f'
+if [[ $push_command =~ $force_options ]]; then
+  read -p "Are you serious? (yesiam/n):" -r < /dev/tty
+  echo
+
+  if [[ $REPLY =~ yesiam ]]; then
+    exit 0
+  fi
+  echo "Push aborted."
+fi
+exit 1
