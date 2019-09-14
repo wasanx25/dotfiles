@@ -3,12 +3,25 @@
 push_command=$(ps -ocommand= -p $PPID)
 force_options='force|\-f'
 if [[ $push_command =~ $force_options ]]; then
+  local_branch=$(git rev-parse --abbrev-ref HEAD)
+  remote_branch="origin/$local_branch"
+
+  git log --oneline -n 20 $local_branch > local_git_log
+  git log --oneline -n 20 $remote_branch > remote_git_log
+
+  diff local_git_log remote_git_log
+
   read -p "Are you serious? (yesiam/n):" -r < /dev/tty
   echo
 
   if [[ $REPLY =~ yesiam ]]; then
+    rm local_git_log
+    rm remote_git_log
     exit 0
   fi
   echo "Push aborted."
+  rm local_git_log
+  rm remote_git_log
   exit 1
 fi
+
