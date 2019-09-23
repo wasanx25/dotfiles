@@ -22,3 +22,5 @@
 	root = ~/src
 [init]
 	templatedir = ~/.config/git/templates/
+[pager]
+	branch = cat
