@@ -1,26 +1,20 @@
-" display line number
-set number
-" always display status line
-set laststatus=2
-
-" :colorscheme solarized
-set t_Co=256
-"set background=dark
 syntax on
-" search result highlight
-set hlsearch
 
-set expandtab
-set tabstop=2
-set shiftwidth=2
-set fileencoding=utf-8
-set encoding=utf-8
-
-set rtp+=$GOROOT/misc/vim
-exe "set rtp+=".globpath($GOPATH, "src/github.com/mdempsky/gocode/vim")
 set completeopt=menu,preview
-
+set encoding=utf-8
+set expandtab
+set fileencoding=utf-8
+set hlsearch
+set laststatus=2
+set nocompatible
+set number
+set rtp+=$GOROOT/misc/vim
+set shiftwidth=2
+set t_Co=256
+set tabstop=2
 set viminfo='50,\"3000,:0,n~/.viminfo
+
+exe "set rtp+=".globpath($GOPATH, "src/github.com/mdempsky/gocode/vim")
 
 au BufRead,BufNewFile /usr/local/etc/nginx/* set ft=nginx
 au BufRead,BufNewFile */Vagrantfile set ft=ruby
@@ -32,12 +26,7 @@ au BufRead,BufNewFile */.htmlhintrc set ft=ruby
 
 let mapleader = "\<Space>"
 
-"--------------------------------------------------------------------------
-" neobundle
-"------------------------------------------------------------------
-set nocompatible               " Be iMproved
-filetype off                   " Required!
-
+filetype off
 
 if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
@@ -119,6 +108,8 @@ call neobundle#begin(expand('~/.vim/bundle/'))
   NeoBundle 'mxw/vim-jsx'
 
   NeoBundle 'prabirshrestha/async.vim'
+  NeoBundle 'prabirshrestha/asyncomplete.vim'
+  NeoBundle 'prabirshrestha/asyncomplete-lsp.vim'
   NeoBundle 'prabirshrestha/vim-lsp'
 
   " SQLFmt
@@ -126,37 +117,19 @@ call neobundle#begin(expand('~/.vim/bundle/'))
 
 call neobundle#end()
 
-filetype plugin indent on     " Required!
+filetype plugin indent on
 
-" Display list when mutiple destination
 nnoremap <C-]> g<C-]>
-
-" NERDTree
 nnoremap <silent><C-e> :NERDTreeToggle<CR>
 let g:NERDTreeNodeDelimiter = "\u00a0"
 
-""""""""""""""""""""""""""""""
-" auto complete close bracket
-""""""""""""""""""""""""""""""
-"imap { {}<LEFT>
-"imap [ []<LEFT>
-"imap ( ()<LEFT>
-""""""""""""""""""""""""""""""
-
-""""""""""""""""""""""""""""""
-" reopen vim from previous cursor position
-""""""""""""""""""""""""""""""
 if has("autocmd")
   autocmd BufReadPost *
   \ if line("'\"") > 0 && line ("'\"") <= line("$") |
   \   exe "normal! g'\"" |
   \ endif
 endif
-""""""""""""""""""""""""""""""
 
-""""""""""""""""""""""""""""""
-" display number of search result
-""""""""""""""""""""""""""""""
 nnoremap <expr> / _(":%s/<Cursor>/&/gn")
 
 function! s:move_cursor_pos_mapping(str, ...)
