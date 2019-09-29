@@ -8,7 +8,7 @@ requirements:
   - Apple ID Sign in
 
 ```
-$ curl -L https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstrap.sh | sh
+$ curl -sSfL https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstrap.sh | sh
 ```
 
 ## update
