@@ -1,0 +1,159 @@
+[[plugins]]
+repo = 'Shougo/neocomplete.vim'
+
+# edit history, Undo/Redo history
+[[plugins]]
+repo = 'sjl/gundo.vim'
+
+# i like solarized
+[[plugins]]
+repo = 'altercation/vim-colors-solarized'
+
+# status line visual
+[[plugins]]
+repo = 'Lokaltog/vim-powerline.git'
+
+# status line visual
+[[plugins]]
+repo = 'Lokaltog/vim-powerline.git'
+
+# emmet notation
+[[plugins]]
+repo = 'mattn/emmet-vim'
+
+# NERDTree
+[[plugins]]
+repo = 'scrooloose/nerdtree'
+
+# Rubist love
+[[plugins]]
+repo = 'tpope/vim-endwise'
+
+# comment shortcut
+[[plugins]]
+repo = 'tomtom/tcomment_vim'
+
+# coloring log file
+[[plugins]]
+repo = 'vim-scripts/AnsiEsc.vim'
+
+# display useless one-byte spaece
+[[plugins]]
+repo = 'bronson/vim-trailing-whitespace'
+
+# git
+[[plugins]]
+repo = 'tpope/vim-fugitive'
+
+# Dash
+[[plugins]]
+repo = 'rizzatti/dash.vim'
+
+# silver searcher
+[[plugins]]
+repo = 'rking/ag.vim'
+
+# clang completion plugin
+[[plugins]]
+repo = 'justmao945/vim-clang'
+
+### Syntax Highlight start
+[[plugins]]
+repo = 'vim-scripts/groovy.vim'
+
+[[plugins]]
+repo = 'tfnico/vim-gradle'
+
+[[plugins]]
+repo = 'vim-scripts/fish-syntax'
+
+[[plugins]]
+repo = 'LnL7/vim-nix'
+
+[[plugins]]
+repo = 'groenewege/vim-less'
+
+[[plugins]]
+repo = 'tpope/vim-dotenv'
+
+[[plugins]]
+repo = 'elixir-lang/vim-elixir'
+
+[[plugins]]
+repo = 'keith/tmux.vim'
+
+[[plugins]]
+repo = 'vim-scripts/nginx.vim'
+
+[[plugins]]
+repo = 'kballard/vim-swift'
+
+[[plugins]]
+repo = 'kchmck/vim-coffee-script'
+
+[[plugins]]
+repo = 'elzr/vim-json'
+
+[[plugins]]
+repo = 'slim-template/vim-slim'
+
+[[plugins]]
+repo = 'leafgarland/typescript-vim'
+
+[[plugins]]
+repo = 'taichouchou2/vim-javascript'
+
+[[plugins]]
+repo = 'ekalinin/Dockerfile.vim'
+
+[[plugins]]
+repo = 'burnettk/vim-angular'
+
+[[plugins]]
+repo = 'matthewsimo/angular-vim-snippets'
+
+[[plugins]]
+repo = 'hashivim/vim-terraform'
+
+[[plugins]]
+repo = 'cakebaker/scss-syntax.vim'
+
+[[plugins]]
+repo = 'bigbrozer/vim-nagios'
+
+[[plugins]]
+repo = 'udalov/kotlin-vim'
+
+[[plugins]]
+repo = 'posva/vim-vue'
+### Syntax Highlight end
+
+# Automatically update tags
+[[plugins]]
+repo = 'szw/vim-tags'
+
+# protobuffer syntax
+[[plugins]]
+repo = 'uarun/vim-protobuf'
+
+[[plugins]]
+repo = 'pangloss/vim-javascript'
+
+[[plugins]]
+repo = 'mxw/vim-jsx'
+
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/vim-lsp'
+
+# SQLFmt
+[[plugins]]
+repo = 'mattn/vim-sqlfmt'
