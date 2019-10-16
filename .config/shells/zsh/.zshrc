@@ -62,3 +62,6 @@ if [[ -x `which colordiff` ]]; then
 else
   alias diff='diff'
 fi
+
+# bindkey -v
+# source $HOME/zshfuns/vim_mode.sh
