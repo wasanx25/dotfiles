@@ -50,6 +50,7 @@ fi
 
 ghq get https://github.com/wasanx25/dotfiles.git
 cd $(ghq root)/github.com/wasanx25/dotfiles
+git config --global --unset ghq.root # reset before execute provision of git cookbook, already set this in ~/.config/git/config
 
 sh install_mitamae.sh
 
