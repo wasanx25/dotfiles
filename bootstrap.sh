@@ -54,4 +54,5 @@ git config --global --unset ghq.root # reset before execute provision of git coo
 
 sh install_mitamae.sh
 
-bin/mitamae-${version} local lib/recipe.rb
+# execute mitamae
+# bin/mitamae-${version} local lib/recipe.rb
