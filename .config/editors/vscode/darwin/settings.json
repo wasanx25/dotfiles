@@ -1,7 +1,6 @@
 {
   "editor.tabSize": 2,
   "window.zoomLevel": 0,
-  "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "go.alternateTools": {
     "go-langserver": "bingo"
@@ -12,7 +11,7 @@
     "format": true,
     "autoComplete": true
   },
-  "editor.formatOnSave": true,
   "vetur.format.defaultFormatter.js": "none",
-  "vetur.format.defaultFormatter.ts": "none"
+  "vetur.format.defaultFormatter.ts": "none",
+  "files.insertFinalNewline": true
 }
