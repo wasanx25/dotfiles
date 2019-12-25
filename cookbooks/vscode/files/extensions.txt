@@ -5,6 +5,7 @@ CoenraadS.bracket-pair-colorizer-2
 dbaeumer.vscode-eslint
 dunstontc.viml
 eg2.tslint
+esbenp.prettier-vscode
 formulahendry.code-runner
 foxundermoon.shell-format
 GrapeCity.gc-excelviewer
@@ -14,9 +15,11 @@ kaiwood.endwise
 misogi.ruby-rubocop
 ms-vscode.cpptools
 ms-vscode.Go
+ms-vscode.vscode-typescript-tslint-plugin
 octref.vetur
 rebornix.ruby
 rust-lang.rust
 tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
 vscodevim.vim
+wingrunr21.vscode-ruby
