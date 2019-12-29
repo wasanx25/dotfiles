@@ -19,6 +19,7 @@ ms-vscode.vscode-typescript-tslint-plugin
 octref.vetur
 rebornix.ruby
 rust-lang.rust
+sysoev.vscode-open-in-github
 tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
 vscodevim.vim
