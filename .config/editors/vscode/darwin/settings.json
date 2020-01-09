@@ -13,5 +13,6 @@
   },
   "vetur.format.defaultFormatter.js": "none",
   "vetur.format.defaultFormatter.ts": "none",
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "workbench.colorTheme": "Webstorm IntelliJ Darcula Theme"
 }

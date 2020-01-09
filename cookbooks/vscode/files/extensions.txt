@@ -18,6 +18,7 @@ ms-vscode.cpptools
 ms-vscode.Go
 ms-vscode.vscode-typescript-tslint-plugin
 octref.vetur
+Orta.vscode-jest
 rebornix.ruby
 rust-lang.rust
 sysoev.vscode-open-in-github
@@ -25,3 +26,4 @@ tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
 vscodevim.vim
 wingrunr21.vscode-ruby
+xr0master.webstorm-intellij-darcula-theme
