@@ -67,6 +67,21 @@ fi
 # bindkey -v
 # source $HOME/zshfuns/vim_mode.sh
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PATH="/Users/wasanx25/.nodenv/shims:${PATH}"
+export NODENV_SHELL=zsh
+source '/usr/local/Cellar/nodenv/1.3.1/libexec/../completions/nodenv.zsh'
+command nodenv rehash 2>/dev/null
+nodenv() {
+  local command
+  command="${1:-}"
+  if [ "$#" -gt 0 ]; then
+    shift
+  fi
+
+  case "$command" in
+  rehash|shell)
+    eval "$(nodenv "sh-$command" "$@")";;
+  *)
+    command nodenv "$command" "$@";;
+  esac
+}
