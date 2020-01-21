@@ -15,5 +15,6 @@
   "vetur.format.defaultFormatter.ts": "none",
   "files.insertFinalNewline": true,
   "workbench.colorTheme": "Webstorm IntelliJ Darcula Theme",
-  "html.mirrorCursorOnMatchingTag": false
+  "html.mirrorCursorOnMatchingTag": false,
+  "go.autocompleteUnimportedPackages": true
 }
