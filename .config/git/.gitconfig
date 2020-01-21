@@ -1,27 +1,27 @@
 [color]
-	status = auto
-	branch = auto
-	ui = true
+  status = auto
+  branch = auto
+  ui = true
 [alias]
-	st = status --short --branch
-	a = add
-	ch = checkout
-	b = branch
-	crp = cherry-pick
-	log-graph = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Cred%d%Creset'
-	log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
-	tag-head = describe --tags --abbrev=0
+  st = status --short --branch
+  a = add
+  ch = checkout
+  b = branch
+  crp = cherry-pick
+  log-graph = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Cred%d%Creset'
+  log-all = log --graph --all --color --pretty='%x09%h %cn%x09%s %Cred%d%Creset'
+  tag-head = describe --tags --abbrev=0
 [user]
-	name = wasanx25
-	email = wasanx25@gmail.com
+  name = wasanx25
+  email = wasanx25@gmail.com
 [core]
-	editor = vim -c \"set fenc=utf-8\"
+  editor = vim -c \"set fenc=utf-8\"
 [fetch]
-	prune = true
+  prune = true
 [ghq]
-	root = ~/src
+  root = ~/src
 [init]
-	templatedir = ~/.config/git/templates/
+  templatedir = ~/.config/git/templates/
 [pager]
-	branch = cat
-	tag = cat
+  branch = cat
+  tag = cat
