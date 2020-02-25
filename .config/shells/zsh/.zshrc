@@ -16,7 +16,7 @@ plugins=(cargo kubectl bundler vagrant mix brew git docker docker-compose ruby g
 source $ZSH/oh-my-zsh.sh
 
 # Go 環境設定
-if [ -x "`which go`" ]; then
+if [[ -x `which go` ]]; then
     export GOPATH=$HOME
     export PATH=$PATH:$GOPATH/bin
 fi
@@ -34,7 +34,7 @@ export PATH=${HOME}/.cargo/bin:${PATH}
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 
-if which jenv > /dev/null; then
+if [[ -x `which jenv` ]] then
   export JENV_ROOT=/usr/local/var/jenv
   eval "$(jenv init -)"
 fi
