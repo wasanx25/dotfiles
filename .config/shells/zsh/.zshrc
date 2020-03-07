@@ -24,8 +24,12 @@ PROMPT='${ret_status} %{$fg[white]%}$(date +%m/%d-%H:%M:%S) %{$fg[cyan]%}%c%{$re
 
 setopt hist_ignore_all_dups
 
-export LESS='-R'
-export LESSOPEN='|~/.lessfilter %s'
+export LESS='-R -N'
+if [ -f "$HOME/.lessfilter" ]; then
+  export LESSOPEN='|~/.lessfilter %s'
+else
+  unset LESSOPEN
+fi
 
 export EDITOR=vim
 eval "$(direnv hook zsh)"
