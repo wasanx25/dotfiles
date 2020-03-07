@@ -11,7 +11,6 @@ alias insdetekt='(){curl -L "https://jcenter.bintray.com/io/gitlab/arturbosch/de
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
-
 plugins=(cargo kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
 source $ZSH/oh-my-zsh.sh
 
@@ -26,8 +25,6 @@ if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud
 
 # The next line enables shell command completion for gcloud.
 if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
-
-[ -s "$HOME/.jabba/jabba.sh" ] && source "$HOME/.jabba/jabba.sh"
 
 export PATH=${HOME}/.cargo/bin:${PATH}
 
@@ -53,8 +50,6 @@ case "$(uname)" in
     export PATH=${PATH}:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:/usr/local/sbin
     ;;
 esac
-# added by travis gem
-[ -f /Users/kikuchi/.travis/travis.sh ] && source /Users/kikuchi/.travis/travis.sh
 
 PROMPT='${ret_status} %{$fg[white]%}$(date +%m/%d-%H:%M:%S) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
 
