@@ -13,45 +13,22 @@ export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
 plugins=(cargo kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
 source $ZSH/oh-my-zsh.sh
-
-# Go 環境設定
-if [[ -x `which go` ]]; then
-    export GOPATH=$HOME
-    export PATH=$PATH:$GOPATH/bin
-fi
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
-
-export PATH=${HOME}/.cargo/bin:${PATH}
-
-export LESS='-R'
-export LESSOPEN='|~/.lessfilter %s'
-
-if [[ -x `which jenv` ]] then
-  export JENV_ROOT=/usr/local/var/jenv
-  eval "$(jenv init -)"
-fi
-
-export EDITOR=vim
-eval "$(direnv hook zsh)"
-
 source $HOME/zshfuns/extend_fzf.sh
+# bindkey -v
+# source $HOME/zshfuns/vim_mode.sh
 
 autoload colors
 colors
 RPROMPT="%B%{${fg[red]}%}[%~]%{${reset_color}%}%b"
-
-case "$(uname)" in
-  "Darwin")
-    export PATH=${PATH}:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:/usr/local/sbin
-    ;;
-esac
-
 PROMPT='${ret_status} %{$fg[white]%}$(date +%m/%d-%H:%M:%S) %{$fg[cyan]%}%c%{$reset_color%} $(git_prompt_info)'
+
+setopt hist_ignore_all_dups
+
+export LESS='-R'
+export LESSOPEN='|~/.lessfilter %s'
+
+export EDITOR=vim
+eval "$(direnv hook zsh)"
 
 if [[ -x `which colordiff` ]]; then
   alias diff='colordiff'
@@ -59,8 +36,29 @@ else
   alias diff='diff'
 fi
 
-# bindkey -v
-# source $HOME/zshfuns/vim_mode.sh
+if [ -f "$HOME/google-cloud-sdk/path.zsh.inc" ]; then source "$HOME/google-cloud-sdk/path.zsh.inc"; fi
+if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then source "$HOME/google-cloud-sdk/completion.zsh.inc"; fi
+
+########################################
+## start environment and PATH setting ##
+########################################
+export PATH=${HOME}/.cargo/bin:${PATH}
+
+if [[ -x `which jenv` ]] then
+  export JENV_ROOT=/usr/local/var/jenv
+  eval "$(jenv init -)"
+fi
+
+if [[ -x `which go` ]]; then
+  export GOPATH=$HOME
+  export PATH=$PATH:$GOPATH/bin
+fi
+
+case "$(uname)" in
+  "Darwin")
+    export PATH=${PATH}:/Applications/Visual\ Studio\ Code.app/Contents/Resources/app/bin:/usr/local/sbin
+    ;;
+esac
 
 if [[ -x `which nodenv` ]]; then
   export PATH="/Users/wasanx25/.nodenv/shims:${PATH}"
@@ -82,5 +80,6 @@ if [[ -x `which nodenv` ]]; then
     esac
   }
 fi
-
-setopt hist_ignore_all_dups
+######################################
+## end environment and PATH setting ##
+######################################
