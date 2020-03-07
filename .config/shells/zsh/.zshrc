@@ -87,3 +87,5 @@ if [[ -x `which nodenv` ]]; then
     esac
   }
 fi
+
+setopt hist_ignore_all_dups
