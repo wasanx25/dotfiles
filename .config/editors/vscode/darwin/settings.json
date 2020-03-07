@@ -16,5 +16,8 @@
   "files.insertFinalNewline": true,
   "workbench.colorTheme": "Webstorm IntelliJ Darcula Theme",
   "html.mirrorCursorOnMatchingTag": false,
-  "go.autocompleteUnimportedPackages": true
+  "go.autocompleteUnimportedPackages": true,
+  "files.exclude": {
+    "**/node_modules": true
+  }
 }
