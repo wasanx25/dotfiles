@@ -47,11 +47,11 @@ cask 'google-chrome'
 cask 'google-cloud-sdk'
 cask 'java'
 cask 'karabiner-elements'
+brew 'keycastr'
 cask 'kotlin-native'
 cask 'postman'
 cask 'skitch'
 cask 'shiftit'
-cask 'teamsql'
 cask 'visual-studio-code'
 
 # mas 'GIPHY CAPTURE', id: 668208984
