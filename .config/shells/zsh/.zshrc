@@ -24,7 +24,7 @@ PROMPT='${ret_status} %{$fg[white]%}$(date +%m/%d-%H:%M:%S) %{$fg[cyan]%}%c%{$re
 
 setopt hist_ignore_all_dups
 
-export LESS='-R -N'
+export LESS='-R'
 if [ -f "$HOME/.lessfilter" ]; then
   export LESSOPEN='|~/.lessfilter %s'
 else
