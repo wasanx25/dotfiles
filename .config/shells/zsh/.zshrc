@@ -11,7 +11,7 @@ alias insdetekt='(){curl -L "https://jcenter.bintray.com/io/gitlab/arturbosch/de
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(cargo kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
+plugins=(yarn cargo kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
 source $ZSH/oh-my-zsh.sh
 source $HOME/zshfuns/extend_fzf.sh
 # bindkey -v
