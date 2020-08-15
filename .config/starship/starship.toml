@@ -1,1 +1,11 @@
 add_newline = false
+
+[git_branch]
+symbol = "🌱 "
+
+[git_status]
+untracked = "???"
+
+[time]
+disabled = false
+format = "%F %T"
