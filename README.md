@@ -17,6 +17,14 @@ $ curl -sSfL https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstra
 $ bin/mitame-${version} local lib/recipe.rb
 ```
 
+or
+
+specific cookbook
+
+```
+$ bin/mitame-${version} local cookbooks/${cookbook_name}/recipe.rb
+```
+
 ## others
 
 ### git config
