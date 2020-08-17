@@ -1,4 +1,4 @@
-execute 'curl -fsSL https://starship.rs/install.sh | bash' do
+execute 'curl -fsSL https://starship.rs/install.sh | bash -s -- -y' do
   not_if 'which starship'
 end
 
