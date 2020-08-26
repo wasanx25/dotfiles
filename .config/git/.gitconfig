@@ -25,3 +25,5 @@
 [pager]
   branch = cat
   tag = cat
+[pull]
+  ff = only
