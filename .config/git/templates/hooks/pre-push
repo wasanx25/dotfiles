@@ -1,7 +1,8 @@
 #!/bin/sh
 
 push_command=$(ps -ocommand= -p $PPID)
-force_options='force|\-f'
+
+force_options='push --force|\push -f'
 if [[ $push_command =~ $force_options ]]; then
   local_branch=$(git rev-parse --abbrev-ref HEAD)
   remote_branch="origin/$local_branch"
