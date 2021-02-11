@@ -6,6 +6,7 @@
   st = status --short --branch
   a = add
   ch = checkout
+  sw = switch
   b = branch
   crp = cherry-pick
   log-graph = log --graph --date=short --pretty=format:'%Cgreen%h %cd %Cblue%cn %Cred%d%Creset'
