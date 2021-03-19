@@ -17,6 +17,8 @@ source $HOME/zshfuns/extend_fzf.sh
 # bindkey -v
 # source $HOME/zshfuns/vim_mode.sh
 
+export LESSCHARSET=utf-8
+
 autoload colors
 colors
 RPROMPT="%B%{${fg[red]}%}[%~]%{${reset_color}%}%b"
