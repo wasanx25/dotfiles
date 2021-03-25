@@ -17,6 +17,7 @@
 .sass-cache
 .vscode
 a.out
+eslint.xml
 build/
 out/
 vendor/
