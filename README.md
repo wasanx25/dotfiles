@@ -8,13 +8,13 @@ requirements:
   - Apple ID Sign in
 
 ```
-$ curl -sSfL https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstrap.sh | sh
+curl -sSfL https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstrap.sh | sh
 ```
 
 ## update
 
 ```
-$ bin/mitame-${version} local lib/recipe.rb
+bin/mitame-${version} local lib/recipe.rb
 ```
 
 or
@@ -22,7 +22,7 @@ or
 specific cookbook
 
 ```
-$ bin/mitame-${version} local cookbooks/${cookbook_name}/recipe.rb
+bin/mitame-${version} local cookbooks/${cookbook_name}/recipe.rb
 ```
 
 ## others
@@ -32,5 +32,5 @@ $ bin/mitame-${version} local cookbooks/${cookbook_name}/recipe.rb
 use git hooks cloned repositories
 
 ```
-$ ghq list | grep [ORG NAME] | xargs -I {} cp ~/.config/git/templates/hooks/pre-push "$(ghq root)/{}/.git/hooks/pre-push"
+ghq list | grep [ORG NAME] | xargs -I {} cp ~/.config/git/templates/hooks/pre-push "$(ghq root)/{}/.git/hooks/pre-push"
 ```
