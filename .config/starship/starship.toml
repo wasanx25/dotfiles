@@ -8,4 +8,4 @@ untracked = "???"
 
 [time]
 disabled = false
-format = "%F %T"
+time_format = "%F %T"
