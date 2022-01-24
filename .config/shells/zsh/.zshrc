@@ -34,7 +34,7 @@ else
 fi
 
 export EDITOR=vim
-eval "$(direnv hook zsh)"
+# eval "$(direnv hook zsh)"
 
 if [[ -x `which colordiff` ]]; then
   alias diff='colordiff'
