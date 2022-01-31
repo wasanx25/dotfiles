@@ -1,4 +1,4 @@
-readonly version="1.12.7"
+readonly version="1.12.9"
 
 case "$(uname)" in
   "Darwin")
