@@ -25,7 +25,6 @@ brew 'telnet'
 brew 'tmux'
 brew 'travis'
 brew 'tree'
-brew 'reattach-to-user-namespace'
 brew 'wget'
 brew 'zsh'
 
