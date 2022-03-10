@@ -8,6 +8,8 @@ alias trr='terraform'
 alias ghr='github-release'
 alias vi='vim'
 alias insdetekt='(){curl -L "https://jcenter.bintray.com/io/gitlab/arturbosch/detekt/detekt-cli/$1/detekt-cli-$1-all.jar" -o detekt-$1.jar}'
+alias hidden_clock='defaults write com.apple.menuextra.clock IsAnalog -bool true'
+alias show_clock='defaults write com.apple.menuextra.clock IsAnalog -bool false'
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
