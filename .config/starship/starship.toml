@@ -7,5 +7,5 @@ symbol = "🌱 "
 untracked = "???"
 
 [time]
-disabled = false
+disabled = true
 time_format = "%F %T"
