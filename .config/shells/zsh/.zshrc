@@ -1,9 +1,11 @@
+# Fig pre block. Keep at the top of this file.
+. "$HOME/.fig/shell/zshrc.pre.zsh"
 alias lsr='ls -lR'
 alias lsa='ls -la'
 alias g='git'
 alias d='docker'
 alias drma='docker rm $(docker ps -a -q)'
-alias fig='docker-compose'
+alias doco='docker-compose'
 alias trr='terraform'
 alias ghr='github-release'
 alias vi='vim'
@@ -74,3 +76,6 @@ export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PR
 ######################################
 ## end environment and PATH setting ##
 ######################################
+
+# Fig post block. Keep at the bottom of this file.
+. "$HOME/.fig/shell/zshrc.post.zsh"
