@@ -8,6 +8,7 @@
 *.swp
 *.tags
 *.tags1
+*.tsbuildinfo
 *tags
 *~
 .DS_Store
