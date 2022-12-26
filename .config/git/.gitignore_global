@@ -16,6 +16,7 @@
 .gradletasknamecache
 .java-version
 .sass-cache
+.vercel
 .vscode
 a.out
 eslint.xml
