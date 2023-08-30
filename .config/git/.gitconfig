@@ -17,6 +17,8 @@
   email = wasanx25@gmail.com
 [core]
   editor = vim -c \"set fenc=utf-8\"
+[push]
+  autoSetupRemote = true
 [fetch]
   prune = true
 [ghq]
