@@ -24,3 +24,4 @@ build/
 out/
 vendor/
 docker-compose.override-ignore.yml
+a.json
