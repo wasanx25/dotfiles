@@ -25,3 +25,4 @@ out/
 vendor/
 docker-compose.override-ignore.yml
 a.json
+a.html
