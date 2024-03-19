@@ -10,6 +10,7 @@ alias vi='vim'
 alias insdetekt='(){curl -L "https://jcenter.bintray.com/io/gitlab/arturbosch/detekt/detekt-cli/$1/detekt-cli-$1-all.jar" -o detekt-$1.jar}'
 alias hidden_clock='defaults write com.apple.menuextra.clock IsAnalog -bool true'
 alias show_clock='defaults write com.apple.menuextra.clock IsAnalog -bool false'
+alias awk='gawk'
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
@@ -77,3 +78,15 @@ export PATH="$WASMTIME_HOME/bin:$PATH"
 ######################################
 ## end environment and PATH setting ##
 ######################################
+
+### MANAGED BY RANCHER DESKTOP START (DO NOT EDIT)
+export PATH="/Users/wasanx25/.rd/bin:$PATH"
+### MANAGED BY RANCHER DESKTOP END (DO NOT EDIT)
+eval "$(direnv hook zsh)"
+
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/wasanx25/works/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/wasanx25/works/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/wasanx25/works/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wasanx25/works/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(rbenv init - zsh)"
