@@ -24,7 +24,7 @@ case "$(uname)" in
 esac
 
 if [ ! $(which git) ]; then
-  git_version="2.19.1"
+  git_version="2.44.0"
   git_file="git-${git_version}"
   curl -L -O "https://www.kernel.org/pub/software/scm/git/${git_file}.tar.gz"
   tar -zxf ${git_file}.tar.gz
@@ -40,8 +40,8 @@ fi
 git --version
 
 if [ ! $(which ghq) ]; then
-  ghq_version="0.8.0"
-  curl -L -O "https://github.com/motemen/ghq/releases/download/v0.8.0/${ghq_file}.zip"
+  ghq_version="1.5.0"
+  curl -L -O "https://github.com/motemen/ghq/releases/download/v${ghq_version}/${ghq_file}.zip"
   unzip -d ${ghq_file} -o ${ghq_file}.zip
   mv ${ghq_file}/ghq $HOME/bin
   rm -rf ${ghq_file}
