@@ -4,10 +4,11 @@ end
 
 case node[:platform]
 when 'darwin'
-  link '/usr/local/bin' do
-    to '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'
-    force true
-  end
+  # TODO: Set by brew cask, so maybe need not this
+  # link '/usr/local/bin' do
+  #   to '/Applications/Visual Studio Code.app/Contents/Resources/app/bin/code'
+  #   force true
+  # end
 
   link "#{ENV['HOME']}/Library/Application Support/Code/User/settings.json" do
     to File.expand_path('.config/editors/vscode/darwin/settings.json')
