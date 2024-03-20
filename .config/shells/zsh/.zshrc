@@ -14,7 +14,7 @@ alias awk='gawk'
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
-plugins=(yarn cargo kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
+plugins=(yarn kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
 source $ZSH/oh-my-zsh.sh
 source $HOME/zshfuns/extend_fzf.sh
 # bindkey -v
@@ -90,3 +90,7 @@ if [ -f '/Users/wasanx25/works/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/wasanx25/works/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wasanx25/works/google-cloud-sdk/completion.zsh.inc'; fi
 eval "$(rbenv init - zsh)"
+
+if [ -f '/opt/homebrew/bin/brew' ]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+fi
