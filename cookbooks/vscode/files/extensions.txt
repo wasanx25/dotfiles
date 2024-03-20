@@ -23,5 +23,4 @@ tomoki1207.vscode-input-sequence
 vscjava.vscode-maven
 vscodevim.vim
 wingrunr21.vscode-ruby
-withfig.fig
 xr0master.webstorm-intellij-darcula-theme
