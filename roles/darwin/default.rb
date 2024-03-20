@@ -6,8 +6,12 @@ include_cookbook 'tmux'
 include_cookbook 'vscode'
 include_cookbook 'git'
 include_cookbook 'vim'
-include_cookbook 'python'
-include_cookbook 'haskell'
+include_cookbook 'starship'
+
+###
+# install laguages
+###
+# include_cookbook 'python'
+# include_cookbook 'haskell'
 # include_cookbook 'rust'
 include_cookbook 'node'
-include_cookbook 'starship'
