@@ -12,7 +12,14 @@ fi
 
 case "$(uname)" in
   "Darwin")
-    ghq_file="ghq_darwin_amd64"
+    case "$(uname -m)" in
+      "arm64")
+        ghq_file="ghq_darwin_arm64"
+        ;;
+      "x86_64")
+        ghq_file="ghq_darwin_amd64"
+        ;;
+    esac
     ;;
   "Linux")
     ghq_file="ghq_linux_amd64"

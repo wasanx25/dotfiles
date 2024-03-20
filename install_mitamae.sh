@@ -2,7 +2,14 @@ readonly version="1.14.1"
 
 case "$(uname)" in
   "Darwin")
-    mitamae_file="mitamae-x86_64-darwin"
+    case "$(uname -m)" in
+      "arm64")
+        mitamae_file="mitamae-aarch64-darwin"
+        ;;
+      "x86_64")
+        mitamae_file="mitamae-x86_64-darwin"
+        ;;
+    esac
     ;;
   "Linux")
     mitamae_file="mitamae-x86_64-linux"
