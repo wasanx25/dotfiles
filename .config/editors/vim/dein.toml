@@ -13,17 +13,13 @@ repo = 'altercation/vim-colors-solarized'
 [[plugins]]
 repo = 'Lokaltog/vim-powerline.git'
 
-# status line visual
-[[plugins]]
-repo = 'Lokaltog/vim-powerline.git'
-
 # emmet notation
 [[plugins]]
 repo = 'mattn/emmet-vim'
 
 # NERDTree
 [[plugins]]
-repo = 'scrooloose/nerdtree'
+repo = 'preservim/nerdtree'
 
 # Rubist love
 [[plugins]]
@@ -99,9 +95,6 @@ repo = 'slim-template/vim-slim'
 
 [[plugins]]
 repo = 'leafgarland/typescript-vim'
-
-[[plugins]]
-repo = 'taichouchou2/vim-javascript'
 
 [[plugins]]
 repo = 'ekalinin/Dockerfile.vim'
