@@ -1,6 +1,8 @@
 #! /bin/sh
 set -ue
 
+source .versions.sh
+
 cd $HOME
 if [ ! -e $HOME/bin ]; then
   mkdir $HOME/bin
@@ -34,25 +36,11 @@ if [ ! $(which brew) ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
-if [ ! $(which git) ]; then
-  git_version="2.44.0"
-  git_file="git-${git_version}"
-  curl -L -O "https://www.kernel.org/pub/software/scm/git/${git_file}.tar.gz"
-  tar -zxf ${git_file}.tar.gz
-  cd ${git_file}
-  make configure
-  ./configure --prefix=/usr
-  make
-  make install
-  cd $HOME
-  rm -rf $HOME/${git_file}
-fi
-
-git --version
+# To force overwrite for using latest
+brew install git
 
 if [ ! $(which ghq) ]; then
-  ghq_version="1.5.0"
-  curl -L -O "https://github.com/motemen/ghq/releases/download/v${ghq_version}/${ghq_file}.zip"
+  curl -L -O "https://github.com/motemen/ghq/releases/download/v${GHQ_VERSION}/${ghq_file}.zip"
   unzip -d ${ghq_file} -o ${ghq_file}.zip
   mv ${ghq_file}/ghq $HOME/bin
   rm -rf ${ghq_file}
@@ -66,4 +54,4 @@ git config --global --unset ghq.root # reset before execute provision of git coo
 sh install_mitamae.sh
 
 # execute mitamae
-# bin/mitamae-${version} local lib/recipe.rb
+# bin/mitamae-${MITAMAE_VERSION} local lib/recipe.rb

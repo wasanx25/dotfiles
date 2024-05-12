@@ -1,4 +1,4 @@
-readonly version="1.14.1"
+source .versions.sh
 
 case "$(uname)" in
   "Darwin")
@@ -20,8 +20,10 @@ case "$(uname)" in
     ;;
 esac
 
-if [ ! -e bin/mitamae-${version} ]; then
-  curl -L -O "https://github.com/itamae-kitchen/mitamae/releases/download/v${version}/${mitamae_file}"
+if [ ! -e bin/mitamae-${MITAMAE_VERSION} ]; then
+  curl -L -O "https://github.com/itamae-kitchen/mitamae/releases/download/v${MITAMAE_VERSION}/${mitamae_file}"
   chmod +x ${mitamae_file}
-  mv ${mitamae_file} ./bin/mitamae-${version}
+  mv ${mitamae_file} ./bin/mitamae-${MITAMAE_VERSION}
+else
+  echo "Already exists this version of miatamae"
 fi
