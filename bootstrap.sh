@@ -6,7 +6,7 @@ if [ ! -e $HOME/bin ]; then
   mkdir $HOME/bin
 fi
 
-if [ ! $(echo $PATH | grep $HOME/bin) ]; then
+if [ ! "$(echo $PATH | grep $HOME/bin)" ]; then
   export PATH=$PATH:$HOME/bin
 fi
 
