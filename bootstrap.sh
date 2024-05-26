@@ -14,6 +14,7 @@ fi
 
 if [ ! $(which brew) ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  (echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> $HOME/.zprofile
 fi
 
 # To force overwrite for using latest
