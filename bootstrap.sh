@@ -12,40 +12,13 @@ if [ ! "$(echo $PATH | grep $HOME/bin)" ]; then
   export PATH=$PATH:$HOME/bin
 fi
 
-case "$(uname)" in
-  "Darwin")
-    case "$(uname -m)" in
-      "arm64")
-        ghq_file="ghq_darwin_arm64"
-        ;;
-      "x86_64")
-        ghq_file="ghq_darwin_amd64"
-        ;;
-    esac
-    ;;
-  "Linux")
-    ghq_file="ghq_linux_amd64"
-    ;;
-  *)
-    echo "unknown uname: $(uname)"
-    exit 1
-    ;;
-esac
-
 if [ ! $(which brew) ]; then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # To force overwrite for using latest
 brew install git
-
-if [ ! $(which ghq) ]; then
-  curl -L -O "https://github.com/motemen/ghq/releases/download/v${GHQ_VERSION}/${ghq_file}.zip"
-  unzip -d ${ghq_file} -o ${ghq_file}.zip
-  mv ${ghq_file}/ghq $HOME/bin
-  rm -rf ${ghq_file}
-  git config --global ghq.root ~/src
-fi
+brew install ghq
 
 ghq get https://github.com/wasanx25/dotfiles.git
 cd $(ghq root)/github.com/wasanx25/dotfiles
