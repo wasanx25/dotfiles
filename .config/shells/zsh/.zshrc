@@ -11,6 +11,7 @@ alias insdetekt='(){curl -L "https://jcenter.bintray.com/io/gitlab/arturbosch/de
 alias hidden_clock='defaults write com.apple.menuextra.clock IsAnalog -bool true'
 alias show_clock='defaults write com.apple.menuextra.clock IsAnalog -bool false'
 alias awk='gawk'
+alias x='gh pr create --web'
 
 export ZSH=$HOME/oh-my-zsh
 ZSH_THEME="robbyrussell"
