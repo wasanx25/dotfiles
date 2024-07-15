@@ -22,7 +22,7 @@ or
 specific cookbook
 
 ```
-bin/mitamae-${version} local cookbooks/${cookbook_name}/recipe.rb
+bin/mitamae-${version} local cookbooks/${cookbook_name}/default.rb
 ```
 
 ## others
