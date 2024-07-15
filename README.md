@@ -14,7 +14,7 @@ curl -sSfL https://raw.githubusercontent.com/wasanx25/dotfiles/master/bootstrap.
 ## update
 
 ```
-bin/mitame-${version} local lib/recipe.rb
+bin/mitamae-${version} local lib/recipe.rb
 ```
 
 or
@@ -22,7 +22,7 @@ or
 specific cookbook
 
 ```
-bin/mitame-${version} local cookbooks/${cookbook_name}/recipe.rb
+bin/mitamae-${version} local cookbooks/${cookbook_name}/recipe.rb
 ```
 
 ## others

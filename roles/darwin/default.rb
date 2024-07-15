@@ -9,7 +9,7 @@ include_cookbook 'vim'
 include_cookbook 'starship'
 
 ###
-# install laguages
+# install languages
 ###
 # include_cookbook 'python'
 # include_cookbook 'haskell'
