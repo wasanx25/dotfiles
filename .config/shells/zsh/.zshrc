@@ -94,7 +94,6 @@ if [ -f '/Users/wasanx25/works/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/wasanx25/works/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/wasanx25/works/google-cloud-sdk/completion.zsh.inc'; fi
-eval "$(rbenv init - zsh)"
 
 if [ -f '/opt/homebrew/bin/brew' ]; then
   eval "$(/opt/homebrew/bin/brew shellenv)"
