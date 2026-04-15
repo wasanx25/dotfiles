@@ -19,5 +19,6 @@
   "go.autocompleteUnimportedPackages": true,
   "files.exclude": {
     "**/node_modules": true
-  }
+  },
+  "window.autoDetectColorScheme": true
 }
