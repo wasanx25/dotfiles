@@ -29,3 +29,5 @@ a.html
 dip.override.yml
 dip.override.yaml
 tmp/
+
+**/.claude/settings.local.json

@@ -7,6 +7,7 @@ include_cookbook 'vscode'
 include_cookbook 'git'
 include_cookbook 'vim'
 include_cookbook 'starship'
+include_cookbook 'claude'
 
 ###
 # install languages
