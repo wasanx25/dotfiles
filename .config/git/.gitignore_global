@@ -31,3 +31,4 @@ dip.override.yaml
 tmp/
 
 **/.claude/settings.local.json
+**/.claude/worktrees/
