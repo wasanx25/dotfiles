@@ -22,6 +22,7 @@ ZSH_THEME="robbyrussell"
 plugins=(yarn kubectl bundler vagrant mix brew git docker docker-compose ruby gem rails)
 source $ZSH/oh-my-zsh.sh
 source $HOME/zshfuns/extend_fzf.sh
+source $HOME/zshfuns/git_worktree.sh
 # bindkey -v
 # source $HOME/zshfuns/vim_mode.sh
 
