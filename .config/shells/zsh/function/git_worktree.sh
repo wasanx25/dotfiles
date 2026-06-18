@@ -73,3 +73,10 @@ wtcd() {
   repo_name=$(basename "$repo_root")
   cd "$WORKTREE_ROOT/$repo_name/$1" || return 1
 }
+
+# wtc <branch-name> [base-branch]
+# worktreeを作って Claude Code をブランチ名でnamed sessionとして起動
+wtc() {
+  wt "$@" || return 1
+  claude -n "$1"
+}
