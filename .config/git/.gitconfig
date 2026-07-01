@@ -32,3 +32,5 @@
   ff = only
 [include]
   path = ~/.config/git/corporation # e.g. set company email to user.email
+[url "git@github.com:"]
+	insteadOf = https://github.com/
