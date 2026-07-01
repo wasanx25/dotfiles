@@ -30,6 +30,7 @@ vim.pack.add({
   { src = 'https://github.com/folke/tokyonight.nvim' },
   { src = 'https://github.com/nvim-lua/plenary.nvim' },
   { src = 'https://github.com/nvim-tree/nvim-web-devicons' },
+  { src = 'https://github.com/nvim-tree/nvim-tree.lua' },
   { src = 'https://github.com/romus204/tree-sitter-manager.nvim' }, -- ← nvim-treesitter の置き換え
   { src = 'https://github.com/neovim/nvim-lspconfig' },
   { src = 'https://github.com/williamboman/mason.nvim' },
