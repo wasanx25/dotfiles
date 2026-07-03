@@ -43,7 +43,7 @@ else
   unset LESSOPEN
 fi
 
-export EDITOR=vim
+export EDITOR=nvim
 # eval "$(direnv hook zsh)"
 
 if [[ -x `which colordiff` ]]; then
