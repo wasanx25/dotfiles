@@ -13,6 +13,10 @@ alias show_clock='defaults write com.apple.menuextra.clock IsAnalog -bool false'
 alias awk='gawk'
 alias x='gh pr create --web'
 
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey '^x' edit-command-line
+
 # Hide typing secret key
 # ex. `secret echo {}`
 secret() { read -s "p?type: " && echo && eval "${@/\{\}/$p}" }
