@@ -30,7 +30,6 @@ brew 'tree'
 brew 'tree-sitter-cli'
 brew 'wget'
 
-cask 'alfred'
 cask 'chatgpt'
 cask 'cursor'
 cask 'dash'
