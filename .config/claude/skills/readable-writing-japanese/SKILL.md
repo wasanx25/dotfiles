@@ -1,16 +1,19 @@
 ---
 name: readable-writing-japanese
-description: 人が読む日本語の文章（Notion、GitHub Issue / PR、Slack、設計資料、調査報告、プレゼン等）を書く・直すときに発火する。日本語に特化し、読みやすさ最優先で簡潔・冗長排除を徹底する。指摘を受けたらこの skill 自体の更新を提案する。
+description: 人が読む日本語の文章を書く・直すときに、指示がなくても発火する。対象は Notion、GitHub Issue / PR の作成、artifacts の作成、openspec の作成、Slack、設計資料、調査報告、プレゼン、および markdown ファイルで QA や手順を説明するとき。日本語に特化し、読みやすさ最優先で簡潔・冗長排除を徹底する。指摘を受けたらこの skill 自体の更新を提案する。
 ---
 
 # readable-writing-japanese
 
 ## いつ使うか
 
-**人が読む日本語の文章**を書く・レビューする・直すときに発火する:
+**人が読む日本語の文章**を書く・レビューする・直すときに、**ユーザーからの明示的な指示がなくても発火する**:
 
+- GitHub Issue・PR の作成（本文やコメント）
+- artifacts の作成
+- openspec の作成
+- markdown ファイルで QA や手順を説明するとき
 - Notion ページ / ドキュメント
-- GitHub Issue・PR の本文やコメント
 - Slack の投稿・スレッド返信
 - 設計資料・調査報告・議事録
 - プレゼンの原稿やスライド文言
